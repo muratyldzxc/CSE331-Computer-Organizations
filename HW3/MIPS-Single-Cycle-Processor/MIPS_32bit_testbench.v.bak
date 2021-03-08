@@ -1,0 +1,41 @@
+
+`define DELAY 50
+module MIPS_32bit_testbench();
+ 
+reg clock ;
+
+
+MIPS_32bit test_MIPS_32bit( clock );
+
+initial clock = 0;
+
+
+ 
+ 
+
+
+initial begin
+
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+		#50 clock=~clock; #50 clock=~clock;
+
+end
+
+initial
+begin
+
+$monitor(" time: %2d PC: %32b , instruction: %32b, Opcode= %6b , rs = %5b , rt = %5b , immediate = %16b\n", $time, test_MIPS_32bit.PC, test_MIPS_32bit.Instruction, test_MIPS_32bit.OpCode , test_MIPS_32bit.rs , test_MIPS_32bit.rt , test_MIPS_32bit.immediate);
+end
+endmodule
+
+
+
+
+

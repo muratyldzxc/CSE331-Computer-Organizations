@@ -1,0 +1,67 @@
+module MIPS_32bit( clock );
+
+	input clock;
+	
+	// Program counter
+	reg[31:0] PC = 32'b0;
+	
+	// Intruction
+	wire [31:0] Instruction;
+	
+	// fields 
+	wire [4:0] rs, rt ;
+	wire [15:0] immediate;
+	wire [5:0] OpCode;
+	
+	// Control signals
+	wire signal_RegWrite, signal_ALUSrc, signal_MemtoReg1, signal_MemtoReg2, signal_MemRead, signal_MemWrite, signal_sb, signal_sh, signal_sw ;
+	
+	// Registers Unit inputs and outputs
+	wire [31:0] Write_data_register, Read_data_1, Read_data_2;
+	
+	// Data Memory Unit inputs and outputs
+	wire [31:0] Memory_Adress, Write_data_memory, Read_data_memory ;
+	
+	// for ALU
+	wire Z, V, Cout;
+	
+	// unnecessary wires
+	wire [31:0] ALU_input_from_mux, ZeroExtended, SignExtended, ImmediateExtended, ZeroExtended_Read_data_memory, _8to32_Read_data_memory ;
+	
+	Instruction_Memory_Unit_32bit get_Instruction( Instruction, PC ) ;
+	
+	assign OpCode = Instruction[31:26] ;
+	assign rs = Instruction[25:21] ;
+	assign rt = Instruction[20:16] ;
+	assign immediate = Instruction[15:0] ;
+	
+	Registers_Unit_32bit read_or_write_to_registers( Read_data_1, Read_data_2, rs, rt, rt, Write_data_register, signal_RegWrite, clock ) ;
+	
+	ZeroExtendImm_16bit_to_32bit first_Zeroextend_16bit_immediate_to_32bit( ZeroExtended, immediate ) ;
+	
+	SignExtendImm_16bit_to_32bit Zeroextend_16bit_immediate_to_32bit( SignExtended, immediate ) ;
+	
+	Immediate_16to32 extend_16bit_immediate_to_32bit( ImmediateExtended , immediate ) ; 
+	
+	Control_Unit send_control_signals( signal_RegWrite, signal_ALUSrc, signal_MemtoReg1, signal_MemtoReg2, signal_MemRead, signal_MemWrite, signal_sb, signal_sh, signal_sw, OpCode ) ;
+	
+	mux32bit_2_1 selection_of_Alu_input( ALU_input_from_mux, signal_ALUSrc, SignExtended, ZeroExtended ) ;
+	
+	ALU32bit add_operation( Z, V, Cout, Memory_Adress, Read_data_1, ALU_input_from_mux, 3'b010 ) ;
+	
+	Data_Memory_Unit_32bit read_or_write_to_DataMemory( Read_data_memory, Memory_Adress, Write_data_memory, signal_MemRead, signal_MemWrite,signal_sb, signal_sh, signal_sw, clock ) ;
+	
+	ZeroExtendImm_16bit_to_32bit ZeroExtend_Read_data_memory( ZeroExtended_Read_data_memory, Read_data_memory[15:0] ) ;
+	
+	_8to32  extend_Read_data_memory_8to32( _8to32_Read_data_memory, Read_data_memory[7:0]  ) ;
+	
+	mux32bit_4_1 selection_of_whichData_writeToRegisters( Write_data_register, signal_MemtoReg2, signal_MemtoReg1, ZeroExtended_Read_data_memory, _8to32_Read_data_memory, ImmediateExtended, Read_data_memory  ) ;
+	
+	
+	always @(posedge clock) begin 
+		
+		PC = PC+1;
+		
+	end 
+
+endmodule

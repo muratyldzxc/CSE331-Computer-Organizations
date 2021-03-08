@@ -1,0 +1,3222 @@
+|MIPS_32bit
+clock => clock.IN2
+
+
+|MIPS_32bit|Instruction_Memory_Unit_32bit:get_Instruction
+Instruction[0] <= Instruction_Memory.DATAOUT
+Instruction[1] <= Instruction_Memory.DATAOUT1
+Instruction[2] <= Instruction_Memory.DATAOUT2
+Instruction[3] <= Instruction_Memory.DATAOUT3
+Instruction[4] <= Instruction_Memory.DATAOUT4
+Instruction[5] <= Instruction_Memory.DATAOUT5
+Instruction[6] <= Instruction_Memory.DATAOUT6
+Instruction[7] <= Instruction_Memory.DATAOUT7
+Instruction[8] <= Instruction_Memory.DATAOUT8
+Instruction[9] <= Instruction_Memory.DATAOUT9
+Instruction[10] <= Instruction_Memory.DATAOUT10
+Instruction[11] <= Instruction_Memory.DATAOUT11
+Instruction[12] <= Instruction_Memory.DATAOUT12
+Instruction[13] <= Instruction_Memory.DATAOUT13
+Instruction[14] <= Instruction_Memory.DATAOUT14
+Instruction[15] <= Instruction_Memory.DATAOUT15
+Instruction[16] <= Instruction_Memory.DATAOUT16
+Instruction[17] <= Instruction_Memory.DATAOUT17
+Instruction[18] <= Instruction_Memory.DATAOUT18
+Instruction[19] <= Instruction_Memory.DATAOUT19
+Instruction[20] <= Instruction_Memory.DATAOUT20
+Instruction[21] <= Instruction_Memory.DATAOUT21
+Instruction[22] <= Instruction_Memory.DATAOUT22
+Instruction[23] <= Instruction_Memory.DATAOUT23
+Instruction[24] <= Instruction_Memory.DATAOUT24
+Instruction[25] <= Instruction_Memory.DATAOUT25
+Instruction[26] <= Instruction_Memory.DATAOUT26
+Instruction[27] <= Instruction_Memory.DATAOUT27
+Instruction[28] <= Instruction_Memory.DATAOUT28
+Instruction[29] <= Instruction_Memory.DATAOUT29
+Instruction[30] <= Instruction_Memory.DATAOUT30
+Instruction[31] <= Instruction_Memory.DATAOUT31
+PC[0] => Instruction_Memory.RADDR
+PC[1] => Instruction_Memory.RADDR1
+PC[2] => Instruction_Memory.RADDR2
+PC[3] => Instruction_Memory.RADDR3
+PC[4] => Instruction_Memory.RADDR4
+PC[5] => ~NO_FANOUT~
+PC[6] => ~NO_FANOUT~
+PC[7] => ~NO_FANOUT~
+PC[8] => ~NO_FANOUT~
+PC[9] => ~NO_FANOUT~
+PC[10] => ~NO_FANOUT~
+PC[11] => ~NO_FANOUT~
+PC[12] => ~NO_FANOUT~
+PC[13] => ~NO_FANOUT~
+PC[14] => ~NO_FANOUT~
+PC[15] => ~NO_FANOUT~
+PC[16] => ~NO_FANOUT~
+PC[17] => ~NO_FANOUT~
+PC[18] => ~NO_FANOUT~
+PC[19] => ~NO_FANOUT~
+PC[20] => ~NO_FANOUT~
+PC[21] => ~NO_FANOUT~
+PC[22] => ~NO_FANOUT~
+PC[23] => ~NO_FANOUT~
+PC[24] => ~NO_FANOUT~
+PC[25] => ~NO_FANOUT~
+PC[26] => ~NO_FANOUT~
+PC[27] => ~NO_FANOUT~
+PC[28] => ~NO_FANOUT~
+PC[29] => ~NO_FANOUT~
+PC[30] => ~NO_FANOUT~
+PC[31] => ~NO_FANOUT~
+
+
+|MIPS_32bit|Control_Unit:send_control_signals
+signal_RegWrite <= for_signal_RegWrite.DB_MAX_OUTPUT_PORT_TYPE
+signal_ALUSrc <= for_AluSrc.DB_MAX_OUTPUT_PORT_TYPE
+signal_MemtoReg1 <= for_signal_MemtoReg1.DB_MAX_OUTPUT_PORT_TYPE
+signal_MemtoReg2 <= for_signal_MemtoReg2.DB_MAX_OUTPUT_PORT_TYPE
+signal_MemRead <= for_signal_MemRead.DB_MAX_OUTPUT_PORT_TYPE
+signal_MemWrite <= for_signal_MemWrite.DB_MAX_OUTPUT_PORT_TYPE
+signal_sb <= for_sb_instruction.DB_MAX_OUTPUT_PORT_TYPE
+signal_sh <= for_sh_instruction.DB_MAX_OUTPUT_PORT_TYPE
+signal_sw <= for_sw_instruction.DB_MAX_OUTPUT_PORT_TYPE
+OpCode[0] => for_lw_instruction.IN0
+OpCode[0] => for_sw_instruction.IN0
+OpCode[0] => for_lhu_instruction.IN0
+OpCode[0] => for_sh_instruction.IN0
+OpCode[0] => for_lh_instruction.IN0
+OpCode[0] => for_lui_instruction.IN0
+OpCode[0] => for_lbu_instruction.IN0
+OpCode[0] => for_sb_instruction.IN0
+OpCode[0] => for_lb_instruction.IN0
+OpCode[1] => for_lw_instruction.IN1
+OpCode[1] => for_sw_instruction.IN1
+OpCode[1] => for_lui_instruction.IN1
+OpCode[1] => for_lbu_instruction.IN1
+OpCode[1] => for_lhu_instruction.IN1
+OpCode[1] => for_sh_instruction.IN1
+OpCode[1] => for_sb_instruction.IN1
+OpCode[1] => for_lb_instruction.IN1
+OpCode[1] => for_lh_instruction.IN1
+OpCode[2] => for_lbu_instruction.IN2
+OpCode[2] => for_lhu_instruction.IN2
+OpCode[2] => for_lui_instruction.IN2
+OpCode[2] => for_lw_instruction.IN2
+OpCode[2] => for_sw_instruction.IN2
+OpCode[2] => for_sh_instruction.IN2
+OpCode[2] => for_sb_instruction.IN2
+OpCode[2] => for_lb_instruction.IN2
+OpCode[2] => for_lh_instruction.IN2
+OpCode[3] => for_sw_instruction.IN3
+OpCode[3] => for_sh_instruction.IN3
+OpCode[3] => for_sb_instruction.IN3
+OpCode[3] => for_lui_instruction.IN3
+OpCode[3] => for_lw_instruction.IN3
+OpCode[3] => for_lbu_instruction.IN3
+OpCode[3] => for_lhu_instruction.IN3
+OpCode[3] => for_lb_instruction.IN3
+OpCode[3] => for_lh_instruction.IN3
+OpCode[4] => for_lw_instruction.IN4
+OpCode[4] => for_sw_instruction.IN4
+OpCode[4] => for_lbu_instruction.IN4
+OpCode[4] => for_lhu_instruction.IN4
+OpCode[4] => for_sh_instruction.IN4
+OpCode[4] => for_sb_instruction.IN4
+OpCode[4] => for_lb_instruction.IN4
+OpCode[4] => for_lh_instruction.IN4
+OpCode[4] => for_lui_instruction.IN4
+OpCode[5] => for_lw_instruction.IN5
+OpCode[5] => for_sw_instruction.IN5
+OpCode[5] => for_lbu_instruction.IN5
+OpCode[5] => for_lhu_instruction.IN5
+OpCode[5] => for_sh_instruction.IN5
+OpCode[5] => for_sb_instruction.IN5
+OpCode[5] => for_lb_instruction.IN5
+OpCode[5] => for_lh_instruction.IN5
+OpCode[5] => for_lui_instruction.IN5
+
+
+|MIPS_32bit|Registers_Unit_32bit:read_or_write_to_registers
+Read_data_1[0] <= Registers.DATAOUT
+Read_data_1[1] <= Registers.DATAOUT1
+Read_data_1[2] <= Registers.DATAOUT2
+Read_data_1[3] <= Registers.DATAOUT3
+Read_data_1[4] <= Registers.DATAOUT4
+Read_data_1[5] <= Registers.DATAOUT5
+Read_data_1[6] <= Registers.DATAOUT6
+Read_data_1[7] <= Registers.DATAOUT7
+Read_data_1[8] <= Registers.DATAOUT8
+Read_data_1[9] <= Registers.DATAOUT9
+Read_data_1[10] <= Registers.DATAOUT10
+Read_data_1[11] <= Registers.DATAOUT11
+Read_data_1[12] <= Registers.DATAOUT12
+Read_data_1[13] <= Registers.DATAOUT13
+Read_data_1[14] <= Registers.DATAOUT14
+Read_data_1[15] <= Registers.DATAOUT15
+Read_data_1[16] <= Registers.DATAOUT16
+Read_data_1[17] <= Registers.DATAOUT17
+Read_data_1[18] <= Registers.DATAOUT18
+Read_data_1[19] <= Registers.DATAOUT19
+Read_data_1[20] <= Registers.DATAOUT20
+Read_data_1[21] <= Registers.DATAOUT21
+Read_data_1[22] <= Registers.DATAOUT22
+Read_data_1[23] <= Registers.DATAOUT23
+Read_data_1[24] <= Registers.DATAOUT24
+Read_data_1[25] <= Registers.DATAOUT25
+Read_data_1[26] <= Registers.DATAOUT26
+Read_data_1[27] <= Registers.DATAOUT27
+Read_data_1[28] <= Registers.DATAOUT28
+Read_data_1[29] <= Registers.DATAOUT29
+Read_data_1[30] <= Registers.DATAOUT30
+Read_data_1[31] <= Registers.DATAOUT31
+Read_data_2[0] <= Registers.PORTBDATAOUT
+Read_data_2[1] <= Registers.PORTBDATAOUT1
+Read_data_2[2] <= Registers.PORTBDATAOUT2
+Read_data_2[3] <= Registers.PORTBDATAOUT3
+Read_data_2[4] <= Registers.PORTBDATAOUT4
+Read_data_2[5] <= Registers.PORTBDATAOUT5
+Read_data_2[6] <= Registers.PORTBDATAOUT6
+Read_data_2[7] <= Registers.PORTBDATAOUT7
+Read_data_2[8] <= Registers.PORTBDATAOUT8
+Read_data_2[9] <= Registers.PORTBDATAOUT9
+Read_data_2[10] <= Registers.PORTBDATAOUT10
+Read_data_2[11] <= Registers.PORTBDATAOUT11
+Read_data_2[12] <= Registers.PORTBDATAOUT12
+Read_data_2[13] <= Registers.PORTBDATAOUT13
+Read_data_2[14] <= Registers.PORTBDATAOUT14
+Read_data_2[15] <= Registers.PORTBDATAOUT15
+Read_data_2[16] <= Registers.PORTBDATAOUT16
+Read_data_2[17] <= Registers.PORTBDATAOUT17
+Read_data_2[18] <= Registers.PORTBDATAOUT18
+Read_data_2[19] <= Registers.PORTBDATAOUT19
+Read_data_2[20] <= Registers.PORTBDATAOUT20
+Read_data_2[21] <= Registers.PORTBDATAOUT21
+Read_data_2[22] <= Registers.PORTBDATAOUT22
+Read_data_2[23] <= Registers.PORTBDATAOUT23
+Read_data_2[24] <= Registers.PORTBDATAOUT24
+Read_data_2[25] <= Registers.PORTBDATAOUT25
+Read_data_2[26] <= Registers.PORTBDATAOUT26
+Read_data_2[27] <= Registers.PORTBDATAOUT27
+Read_data_2[28] <= Registers.PORTBDATAOUT28
+Read_data_2[29] <= Registers.PORTBDATAOUT29
+Read_data_2[30] <= Registers.PORTBDATAOUT30
+Read_data_2[31] <= Registers.PORTBDATAOUT31
+Read_reg_1[0] => Registers.RADDR
+Read_reg_1[1] => Registers.RADDR1
+Read_reg_1[2] => Registers.RADDR2
+Read_reg_1[3] => Registers.RADDR3
+Read_reg_1[4] => Registers.RADDR4
+Read_reg_2[0] => Registers.PORTBRADDR
+Read_reg_2[1] => Registers.PORTBRADDR1
+Read_reg_2[2] => Registers.PORTBRADDR2
+Read_reg_2[3] => Registers.PORTBRADDR3
+Read_reg_2[4] => Registers.PORTBRADDR4
+Write_register[0] => Registers.waddr_a[0].DATAIN
+Write_register[0] => Registers.WADDR
+Write_register[1] => Registers.waddr_a[1].DATAIN
+Write_register[1] => Registers.WADDR1
+Write_register[2] => Registers.waddr_a[2].DATAIN
+Write_register[2] => Registers.WADDR2
+Write_register[3] => Registers.waddr_a[3].DATAIN
+Write_register[3] => Registers.WADDR3
+Write_register[4] => Registers.waddr_a[4].DATAIN
+Write_register[4] => Registers.WADDR4
+Write_data[0] => Registers.data_a[0].DATAIN
+Write_data[0] => Registers.DATAIN
+Write_data[1] => Registers.data_a[1].DATAIN
+Write_data[1] => Registers.DATAIN1
+Write_data[2] => Registers.data_a[2].DATAIN
+Write_data[2] => Registers.DATAIN2
+Write_data[3] => Registers.data_a[3].DATAIN
+Write_data[3] => Registers.DATAIN3
+Write_data[4] => Registers.data_a[4].DATAIN
+Write_data[4] => Registers.DATAIN4
+Write_data[5] => Registers.data_a[5].DATAIN
+Write_data[5] => Registers.DATAIN5
+Write_data[6] => Registers.data_a[6].DATAIN
+Write_data[6] => Registers.DATAIN6
+Write_data[7] => Registers.data_a[7].DATAIN
+Write_data[7] => Registers.DATAIN7
+Write_data[8] => Registers.data_a[8].DATAIN
+Write_data[8] => Registers.DATAIN8
+Write_data[9] => Registers.data_a[9].DATAIN
+Write_data[9] => Registers.DATAIN9
+Write_data[10] => Registers.data_a[10].DATAIN
+Write_data[10] => Registers.DATAIN10
+Write_data[11] => Registers.data_a[11].DATAIN
+Write_data[11] => Registers.DATAIN11
+Write_data[12] => Registers.data_a[12].DATAIN
+Write_data[12] => Registers.DATAIN12
+Write_data[13] => Registers.data_a[13].DATAIN
+Write_data[13] => Registers.DATAIN13
+Write_data[14] => Registers.data_a[14].DATAIN
+Write_data[14] => Registers.DATAIN14
+Write_data[15] => Registers.data_a[15].DATAIN
+Write_data[15] => Registers.DATAIN15
+Write_data[16] => Registers.data_a[16].DATAIN
+Write_data[16] => Registers.DATAIN16
+Write_data[17] => Registers.data_a[17].DATAIN
+Write_data[17] => Registers.DATAIN17
+Write_data[18] => Registers.data_a[18].DATAIN
+Write_data[18] => Registers.DATAIN18
+Write_data[19] => Registers.data_a[19].DATAIN
+Write_data[19] => Registers.DATAIN19
+Write_data[20] => Registers.data_a[20].DATAIN
+Write_data[20] => Registers.DATAIN20
+Write_data[21] => Registers.data_a[21].DATAIN
+Write_data[21] => Registers.DATAIN21
+Write_data[22] => Registers.data_a[22].DATAIN
+Write_data[22] => Registers.DATAIN22
+Write_data[23] => Registers.data_a[23].DATAIN
+Write_data[23] => Registers.DATAIN23
+Write_data[24] => Registers.data_a[24].DATAIN
+Write_data[24] => Registers.DATAIN24
+Write_data[25] => Registers.data_a[25].DATAIN
+Write_data[25] => Registers.DATAIN25
+Write_data[26] => Registers.data_a[26].DATAIN
+Write_data[26] => Registers.DATAIN26
+Write_data[27] => Registers.data_a[27].DATAIN
+Write_data[27] => Registers.DATAIN27
+Write_data[28] => Registers.data_a[28].DATAIN
+Write_data[28] => Registers.DATAIN28
+Write_data[29] => Registers.data_a[29].DATAIN
+Write_data[29] => Registers.DATAIN29
+Write_data[30] => Registers.data_a[30].DATAIN
+Write_data[30] => Registers.DATAIN30
+Write_data[31] => Registers.data_a[31].DATAIN
+Write_data[31] => Registers.DATAIN31
+signal_RegWrite => Registers.we_a.DATAIN
+signal_RegWrite => Registers.WE
+clk => Registers.we_a.CLK
+clk => Registers.waddr_a[4].CLK
+clk => Registers.waddr_a[3].CLK
+clk => Registers.waddr_a[2].CLK
+clk => Registers.waddr_a[1].CLK
+clk => Registers.waddr_a[0].CLK
+clk => Registers.data_a[31].CLK
+clk => Registers.data_a[30].CLK
+clk => Registers.data_a[29].CLK
+clk => Registers.data_a[28].CLK
+clk => Registers.data_a[27].CLK
+clk => Registers.data_a[26].CLK
+clk => Registers.data_a[25].CLK
+clk => Registers.data_a[24].CLK
+clk => Registers.data_a[23].CLK
+clk => Registers.data_a[22].CLK
+clk => Registers.data_a[21].CLK
+clk => Registers.data_a[20].CLK
+clk => Registers.data_a[19].CLK
+clk => Registers.data_a[18].CLK
+clk => Registers.data_a[17].CLK
+clk => Registers.data_a[16].CLK
+clk => Registers.data_a[15].CLK
+clk => Registers.data_a[14].CLK
+clk => Registers.data_a[13].CLK
+clk => Registers.data_a[12].CLK
+clk => Registers.data_a[11].CLK
+clk => Registers.data_a[10].CLK
+clk => Registers.data_a[9].CLK
+clk => Registers.data_a[8].CLK
+clk => Registers.data_a[7].CLK
+clk => Registers.data_a[6].CLK
+clk => Registers.data_a[5].CLK
+clk => Registers.data_a[4].CLK
+clk => Registers.data_a[3].CLK
+clk => Registers.data_a[2].CLK
+clk => Registers.data_a[1].CLK
+clk => Registers.data_a[0].CLK
+clk => Registers.CLK0
+
+
+|MIPS_32bit|ZeroExtendImm_16bit_to_32bit:Zeroextend_16bit_immediate_to_32bit
+ZeroExtImm_32bit[0] <= Imm_16bit[0].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[1] <= Imm_16bit[1].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[2] <= Imm_16bit[2].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[3] <= Imm_16bit[3].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[4] <= Imm_16bit[4].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[5] <= Imm_16bit[5].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[6] <= Imm_16bit[6].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[7] <= Imm_16bit[7].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[8] <= Imm_16bit[8].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[9] <= Imm_16bit[9].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[10] <= Imm_16bit[10].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[11] <= Imm_16bit[11].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[12] <= Imm_16bit[12].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[13] <= Imm_16bit[13].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[14] <= Imm_16bit[14].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[15] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[16] <= <GND>
+ZeroExtImm_32bit[17] <= <GND>
+ZeroExtImm_32bit[18] <= <GND>
+ZeroExtImm_32bit[19] <= <GND>
+ZeroExtImm_32bit[20] <= <GND>
+ZeroExtImm_32bit[21] <= <GND>
+ZeroExtImm_32bit[22] <= <GND>
+ZeroExtImm_32bit[23] <= <GND>
+ZeroExtImm_32bit[24] <= <GND>
+ZeroExtImm_32bit[25] <= <GND>
+ZeroExtImm_32bit[26] <= <GND>
+ZeroExtImm_32bit[27] <= <GND>
+ZeroExtImm_32bit[28] <= <GND>
+ZeroExtImm_32bit[29] <= <GND>
+ZeroExtImm_32bit[30] <= <GND>
+ZeroExtImm_32bit[31] <= <GND>
+Imm_16bit[0] => ZeroExtImm_32bit[0].DATAIN
+Imm_16bit[1] => ZeroExtImm_32bit[1].DATAIN
+Imm_16bit[2] => ZeroExtImm_32bit[2].DATAIN
+Imm_16bit[3] => ZeroExtImm_32bit[3].DATAIN
+Imm_16bit[4] => ZeroExtImm_32bit[4].DATAIN
+Imm_16bit[5] => ZeroExtImm_32bit[5].DATAIN
+Imm_16bit[6] => ZeroExtImm_32bit[6].DATAIN
+Imm_16bit[7] => ZeroExtImm_32bit[7].DATAIN
+Imm_16bit[8] => ZeroExtImm_32bit[8].DATAIN
+Imm_16bit[9] => ZeroExtImm_32bit[9].DATAIN
+Imm_16bit[10] => ZeroExtImm_32bit[10].DATAIN
+Imm_16bit[11] => ZeroExtImm_32bit[11].DATAIN
+Imm_16bit[12] => ZeroExtImm_32bit[12].DATAIN
+Imm_16bit[13] => ZeroExtImm_32bit[13].DATAIN
+Imm_16bit[14] => ZeroExtImm_32bit[14].DATAIN
+Imm_16bit[15] => ZeroExtImm_32bit[15].DATAIN
+
+
+|MIPS_32bit|SignExtendImm_16bit_to_32bit:Signextend_16bit_immediate_to_32bit
+SignExtImm_32bit[0] <= Imm_16bit[0].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[1] <= Imm_16bit[1].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[2] <= Imm_16bit[2].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[3] <= Imm_16bit[3].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[4] <= Imm_16bit[4].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[5] <= Imm_16bit[5].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[6] <= Imm_16bit[6].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[7] <= Imm_16bit[7].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[8] <= Imm_16bit[8].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[9] <= Imm_16bit[9].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[10] <= Imm_16bit[10].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[11] <= Imm_16bit[11].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[12] <= Imm_16bit[12].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[13] <= Imm_16bit[13].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[14] <= Imm_16bit[14].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[15] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[16] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[17] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[18] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[19] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[20] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[21] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[22] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[23] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[24] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[25] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[26] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[27] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[28] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[29] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[30] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+SignExtImm_32bit[31] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+Imm_16bit[0] => SignExtImm_32bit[0].DATAIN
+Imm_16bit[1] => SignExtImm_32bit[1].DATAIN
+Imm_16bit[2] => SignExtImm_32bit[2].DATAIN
+Imm_16bit[3] => SignExtImm_32bit[3].DATAIN
+Imm_16bit[4] => SignExtImm_32bit[4].DATAIN
+Imm_16bit[5] => SignExtImm_32bit[5].DATAIN
+Imm_16bit[6] => SignExtImm_32bit[6].DATAIN
+Imm_16bit[7] => SignExtImm_32bit[7].DATAIN
+Imm_16bit[8] => SignExtImm_32bit[8].DATAIN
+Imm_16bit[9] => SignExtImm_32bit[9].DATAIN
+Imm_16bit[10] => SignExtImm_32bit[10].DATAIN
+Imm_16bit[11] => SignExtImm_32bit[11].DATAIN
+Imm_16bit[12] => SignExtImm_32bit[12].DATAIN
+Imm_16bit[13] => SignExtImm_32bit[13].DATAIN
+Imm_16bit[14] => SignExtImm_32bit[14].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[15].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[16].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[17].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[18].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[19].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[20].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[21].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[22].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[23].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[24].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[25].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[26].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[27].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[28].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[29].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[30].DATAIN
+Imm_16bit[15] => SignExtImm_32bit[31].DATAIN
+
+
+|MIPS_32bit|Immediate_16to32:extend_16bit_immediate_to_32bit
+extended_immediate_32bit[0] <= <GND>
+extended_immediate_32bit[1] <= <GND>
+extended_immediate_32bit[2] <= <GND>
+extended_immediate_32bit[3] <= <GND>
+extended_immediate_32bit[4] <= <GND>
+extended_immediate_32bit[5] <= <GND>
+extended_immediate_32bit[6] <= <GND>
+extended_immediate_32bit[7] <= <GND>
+extended_immediate_32bit[8] <= <GND>
+extended_immediate_32bit[9] <= <GND>
+extended_immediate_32bit[10] <= <GND>
+extended_immediate_32bit[11] <= <GND>
+extended_immediate_32bit[12] <= <GND>
+extended_immediate_32bit[13] <= <GND>
+extended_immediate_32bit[14] <= <GND>
+extended_immediate_32bit[15] <= <GND>
+extended_immediate_32bit[16] <= Imm_16bit[0].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[17] <= Imm_16bit[1].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[18] <= Imm_16bit[2].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[19] <= Imm_16bit[3].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[20] <= Imm_16bit[4].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[21] <= Imm_16bit[5].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[22] <= Imm_16bit[6].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[23] <= Imm_16bit[7].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[24] <= Imm_16bit[8].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[25] <= Imm_16bit[9].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[26] <= Imm_16bit[10].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[27] <= Imm_16bit[11].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[28] <= Imm_16bit[12].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[29] <= Imm_16bit[13].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[30] <= Imm_16bit[14].DB_MAX_OUTPUT_PORT_TYPE
+extended_immediate_32bit[31] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+Imm_16bit[0] => extended_immediate_32bit[16].DATAIN
+Imm_16bit[1] => extended_immediate_32bit[17].DATAIN
+Imm_16bit[2] => extended_immediate_32bit[18].DATAIN
+Imm_16bit[3] => extended_immediate_32bit[19].DATAIN
+Imm_16bit[4] => extended_immediate_32bit[20].DATAIN
+Imm_16bit[5] => extended_immediate_32bit[21].DATAIN
+Imm_16bit[6] => extended_immediate_32bit[22].DATAIN
+Imm_16bit[7] => extended_immediate_32bit[23].DATAIN
+Imm_16bit[8] => extended_immediate_32bit[24].DATAIN
+Imm_16bit[9] => extended_immediate_32bit[25].DATAIN
+Imm_16bit[10] => extended_immediate_32bit[26].DATAIN
+Imm_16bit[11] => extended_immediate_32bit[27].DATAIN
+Imm_16bit[12] => extended_immediate_32bit[28].DATAIN
+Imm_16bit[13] => extended_immediate_32bit[29].DATAIN
+Imm_16bit[14] => extended_immediate_32bit[30].DATAIN
+Imm_16bit[15] => extended_immediate_32bit[31].DATAIN
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input
+result[0] <= mux2_1:output_0.port0
+result[1] <= mux2_1:output_1.port0
+result[2] <= mux2_1:output_2.port0
+result[3] <= mux2_1:output_3.port0
+result[4] <= mux2_1:output_4.port0
+result[5] <= mux2_1:output_5.port0
+result[6] <= mux2_1:output_6.port0
+result[7] <= mux2_1:output_7.port0
+result[8] <= mux2_1:output_8.port0
+result[9] <= mux2_1:output_9.port0
+result[10] <= mux2_1:output_10.port0
+result[11] <= mux2_1:output_11.port0
+result[12] <= mux2_1:output_12.port0
+result[13] <= mux2_1:output_13.port0
+result[14] <= mux2_1:output_14.port0
+result[15] <= mux2_1:output_15.port0
+result[16] <= mux2_1:output_16.port0
+result[17] <= mux2_1:output_17.port0
+result[18] <= mux2_1:output_18.port0
+result[19] <= mux2_1:output_19.port0
+result[20] <= mux2_1:output_20.port0
+result[21] <= mux2_1:output_21.port0
+result[22] <= mux2_1:output_22.port0
+result[23] <= mux2_1:output_23.port0
+result[24] <= mux2_1:output_24.port0
+result[25] <= mux2_1:output_25.port0
+result[26] <= mux2_1:output_26.port0
+result[27] <= mux2_1:output_27.port0
+result[28] <= mux2_1:output_28.port0
+result[29] <= mux2_1:output_29.port0
+result[30] <= mux2_1:output_30.port0
+result[31] <= mux2_1:output_31.port0
+S0 => S0.IN32
+I1[0] => I1[0].IN1
+I1[1] => I1[1].IN1
+I1[2] => I1[2].IN1
+I1[3] => I1[3].IN1
+I1[4] => I1[4].IN1
+I1[5] => I1[5].IN1
+I1[6] => I1[6].IN1
+I1[7] => I1[7].IN1
+I1[8] => I1[8].IN1
+I1[9] => I1[9].IN1
+I1[10] => I1[10].IN1
+I1[11] => I1[11].IN1
+I1[12] => I1[12].IN1
+I1[13] => I1[13].IN1
+I1[14] => I1[14].IN1
+I1[15] => I1[15].IN1
+I1[16] => I1[16].IN1
+I1[17] => I1[17].IN1
+I1[18] => I1[18].IN1
+I1[19] => I1[19].IN1
+I1[20] => I1[20].IN1
+I1[21] => I1[21].IN1
+I1[22] => I1[22].IN1
+I1[23] => I1[23].IN1
+I1[24] => I1[24].IN1
+I1[25] => I1[25].IN1
+I1[26] => I1[26].IN1
+I1[27] => I1[27].IN1
+I1[28] => I1[28].IN1
+I1[29] => I1[29].IN1
+I1[30] => I1[30].IN1
+I1[31] => I1[31].IN1
+I0[0] => I0[0].IN1
+I0[1] => I0[1].IN1
+I0[2] => I0[2].IN1
+I0[3] => I0[3].IN1
+I0[4] => I0[4].IN1
+I0[5] => I0[5].IN1
+I0[6] => I0[6].IN1
+I0[7] => I0[7].IN1
+I0[8] => I0[8].IN1
+I0[9] => I0[9].IN1
+I0[10] => I0[10].IN1
+I0[11] => I0[11].IN1
+I0[12] => I0[12].IN1
+I0[13] => I0[13].IN1
+I0[14] => I0[14].IN1
+I0[15] => I0[15].IN1
+I0[16] => I0[16].IN1
+I0[17] => I0[17].IN1
+I0[18] => I0[18].IN1
+I0[19] => I0[19].IN1
+I0[20] => I0[20].IN1
+I0[21] => I0[21].IN1
+I0[22] => I0[22].IN1
+I0[23] => I0[23].IN1
+I0[24] => I0[24].IN1
+I0[25] => I0[25].IN1
+I0[26] => I0[26].IN1
+I0[27] => I0[27].IN1
+I0[28] => I0[28].IN1
+I0[29] => I0[29].IN1
+I0[30] => I0[30].IN1
+I0[31] => I0[31].IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_0
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_1
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_2
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_3
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_4
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_5
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_6
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_7
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_8
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_9
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_10
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_11
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_12
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_13
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_14
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_15
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_16
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_17
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_18
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_19
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_20
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_21
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_22
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_23
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_24
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_25
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_26
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_27
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_28
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_29
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_30
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|mux32bit_2_1:selection_of_Alu_input|mux2_1:output_31
+result <= andAll.DB_MAX_OUTPUT_PORT_TYPE
+S0 => andInput1.IN0
+S0 => andInput0.IN0
+I1 => andInput1.IN1
+I0 => andInput0.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation
+Z <= or_all_outputs.DB_MAX_OUTPUT_PORT_TYPE
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Couts[31].DB_MAX_OUTPUT_PORT_TYPE
+Output[0] <= ALU1bit:for_less.port1
+Output[1] <= ALU1bit:for_bit_1.port1
+Output[2] <= ALU1bit:for_bit_2.port1
+Output[3] <= ALU1bit:for_bit_3.port1
+Output[4] <= ALU1bit:for_bit_4.port1
+Output[5] <= ALU1bit:for_bit_5.port1
+Output[6] <= ALU1bit:for_bit_6.port1
+Output[7] <= ALU1bit:for_bit_7.port1
+Output[8] <= ALU1bit:for_bit_8.port1
+Output[9] <= ALU1bit:for_bit_9.port1
+Output[10] <= ALU1bit:for_bit_10.port1
+Output[11] <= ALU1bit:for_bit_11.port1
+Output[12] <= ALU1bit:for_bit_12.port1
+Output[13] <= ALU1bit:for_bit_13.port1
+Output[14] <= ALU1bit:for_bit_14.port1
+Output[15] <= ALU1bit:for_bit_15.port1
+Output[16] <= ALU1bit:for_bit_16.port1
+Output[17] <= ALU1bit:for_bit_17.port1
+Output[18] <= ALU1bit:for_bit_18.port1
+Output[19] <= ALU1bit:for_bit_19.port1
+Output[20] <= ALU1bit:for_bit_20.port1
+Output[21] <= ALU1bit:for_bit_21.port1
+Output[22] <= ALU1bit:for_bit_22.port1
+Output[23] <= ALU1bit:for_bit_23.port1
+Output[24] <= ALU1bit:for_bit_24.port1
+Output[25] <= ALU1bit:for_bit_25.port1
+Output[26] <= ALU1bit:for_bit_26.port1
+Output[27] <= ALU1bit:for_bit_27.port1
+Output[28] <= ALU1bit:for_bit_28.port1
+Output[29] <= ALU1bit:for_bit_29.port1
+Output[30] <= ALU1bit:for_bit_30.port1
+Output[31] <= ALU1bit:for_bit_31.port1
+I1[0] => I1[0].IN2
+I1[1] => I1[1].IN1
+I1[2] => I1[2].IN1
+I1[3] => I1[3].IN1
+I1[4] => I1[4].IN1
+I1[5] => I1[5].IN1
+I1[6] => I1[6].IN1
+I1[7] => I1[7].IN1
+I1[8] => I1[8].IN1
+I1[9] => I1[9].IN1
+I1[10] => I1[10].IN1
+I1[11] => I1[11].IN1
+I1[12] => I1[12].IN1
+I1[13] => I1[13].IN1
+I1[14] => I1[14].IN1
+I1[15] => I1[15].IN1
+I1[16] => I1[16].IN1
+I1[17] => I1[17].IN1
+I1[18] => I1[18].IN1
+I1[19] => I1[19].IN1
+I1[20] => I1[20].IN1
+I1[21] => I1[21].IN1
+I1[22] => I1[22].IN1
+I1[23] => I1[23].IN1
+I1[24] => I1[24].IN1
+I1[25] => I1[25].IN1
+I1[26] => I1[26].IN1
+I1[27] => I1[27].IN1
+I1[28] => I1[28].IN1
+I1[29] => I1[29].IN1
+I1[30] => I1[30].IN1
+I1[31] => I1[31].IN2
+I2[0] => I2[0].IN2
+I2[1] => I2[1].IN1
+I2[2] => I2[2].IN1
+I2[3] => I2[3].IN1
+I2[4] => I2[4].IN1
+I2[5] => I2[5].IN1
+I2[6] => I2[6].IN1
+I2[7] => I2[7].IN1
+I2[8] => I2[8].IN1
+I2[9] => I2[9].IN1
+I2[10] => I2[10].IN1
+I2[11] => I2[11].IN1
+I2[12] => I2[12].IN1
+I2[13] => I2[13].IN1
+I2[14] => I2[14].IN1
+I2[15] => I2[15].IN1
+I2[16] => I2[16].IN1
+I2[17] => I2[17].IN1
+I2[18] => I2[18].IN1
+I2[19] => I2[19].IN1
+I2[20] => I2[20].IN1
+I2[21] => I2[21].IN1
+I2[22] => I2[22].IN1
+I2[23] => I2[23].IN1
+I2[24] => I2[24].IN1
+I2[25] => I2[25].IN1
+I2[26] => I2[26].IN1
+I2[27] => I2[27].IN1
+I2[28] => I2[28].IN1
+I2[29] => I2[29].IN1
+I2[30] => I2[30].IN1
+I2[31] => I2[31].IN2
+ALUop[0] => ALUop[0].IN33
+ALUop[1] => ALUop[1].IN33
+ALUop[2] => ALUop[2].IN35
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_0
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_0|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_0|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_1
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_1|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_1|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_2
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_2|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_2|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_3
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_3|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_3|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_4
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_4|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_4|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_5
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_5|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_5|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_6
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_6|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_6|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_7
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_7|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_7|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_8
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_8|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_8|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_9
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_9|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_9|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_10
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_10|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_10|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_11
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_11|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_11|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_12
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_12|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_12|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_13
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_13|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_13|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_14
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_14|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_14|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_15
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_15|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_15|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_16
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_16|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_16|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_17
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_17|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_17|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_18
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_18|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_18|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_19
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_19|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_19|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_20
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_20|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_20|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_21
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_21|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_21|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_22
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_22|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_22|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_23
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_23|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_23|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_24
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_24|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_24|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_25
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_25|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_25|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_26
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_26|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_26|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_27
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_27|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_27|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_28
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_28|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_28|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_29
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_29|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_29|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_30
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_30|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_30|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_31
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_31|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_bit_31|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|_xor:check_overflow
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_set_op
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_set_op|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_set_op|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|ALU32bit:add_operation|_xor:for_set
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_less
+Cout <= result_of_Cout.DB_MAX_OUTPUT_PORT_TYPE
+result <= mux4_1:select.port0
+input1 => after_xor_and_two_Input.IN1
+input1 => after_xor_or_two_input.IN1
+input2 => input2.IN1
+ALUop[0] => ALUop[0].IN1
+ALUop[1] => ALUop[1].IN1
+ALUop[2] => ALUop[2].IN1
+Cin => after_after_and2.IN1
+Cin => after_or_after_and2_Cin.IN1
+Less => Less.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_less|_xor:decide_add_or_subtract
+result <= now_result.DB_MAX_OUTPUT_PORT_TYPE
+input1 => before_result2.IN0
+input1 => before_result1.IN0
+input2 => before_result1.IN1
+input2 => before_result2.IN1
+
+
+|MIPS_32bit|ALU32bit:add_operation|ALU1bit:for_less|mux4_1:select
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|Data_Memory_Unit_32bit:read_or_write_to_DataMemory
+Read_data[0] <= Read_data[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[1] <= Read_data[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[2] <= Read_data[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[3] <= Read_data[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[4] <= Read_data[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[5] <= Read_data[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[6] <= Read_data[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[7] <= Read_data[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[8] <= Read_data[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[9] <= Read_data[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[10] <= Read_data[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[11] <= Read_data[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[12] <= Read_data[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[13] <= Read_data[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[14] <= Read_data[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[15] <= Read_data[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[16] <= Read_data[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[17] <= Read_data[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[18] <= Read_data[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[19] <= Read_data[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[20] <= Read_data[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[21] <= Read_data[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[22] <= Read_data[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[23] <= Read_data[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[24] <= Read_data[24]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[25] <= Read_data[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[26] <= Read_data[26]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[27] <= Read_data[27]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[28] <= Read_data[28]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[29] <= Read_data[29]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[30] <= Read_data[30]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Read_data[31] <= Read_data[31]$latch.DB_MAX_OUTPUT_PORT_TYPE
+memory_adress[0] => Data_Memory.RADDR
+memory_adress[0] => Data_Memory.WADDR
+memory_adress[1] => Data_Memory.RADDR1
+memory_adress[1] => Data_Memory.WADDR1
+memory_adress[2] => Data_Memory.RADDR2
+memory_adress[2] => Data_Memory.WADDR2
+memory_adress[3] => Data_Memory.RADDR3
+memory_adress[3] => Data_Memory.WADDR3
+memory_adress[4] => Data_Memory.RADDR4
+memory_adress[4] => Data_Memory.WADDR4
+memory_adress[5] => Data_Memory.RADDR5
+memory_adress[5] => Data_Memory.WADDR5
+memory_adress[6] => Data_Memory.RADDR6
+memory_adress[6] => Data_Memory.WADDR6
+memory_adress[7] => Data_Memory.RADDR7
+memory_adress[7] => Data_Memory.WADDR7
+memory_adress[8] => ~NO_FANOUT~
+memory_adress[9] => ~NO_FANOUT~
+memory_adress[10] => ~NO_FANOUT~
+memory_adress[11] => ~NO_FANOUT~
+memory_adress[12] => ~NO_FANOUT~
+memory_adress[13] => ~NO_FANOUT~
+memory_adress[14] => ~NO_FANOUT~
+memory_adress[15] => ~NO_FANOUT~
+memory_adress[16] => ~NO_FANOUT~
+memory_adress[17] => ~NO_FANOUT~
+memory_adress[18] => ~NO_FANOUT~
+memory_adress[19] => ~NO_FANOUT~
+memory_adress[20] => ~NO_FANOUT~
+memory_adress[21] => ~NO_FANOUT~
+memory_adress[22] => ~NO_FANOUT~
+memory_adress[23] => ~NO_FANOUT~
+memory_adress[24] => ~NO_FANOUT~
+memory_adress[25] => ~NO_FANOUT~
+memory_adress[26] => ~NO_FANOUT~
+memory_adress[27] => ~NO_FANOUT~
+memory_adress[28] => ~NO_FANOUT~
+memory_adress[29] => ~NO_FANOUT~
+memory_adress[30] => ~NO_FANOUT~
+memory_adress[31] => ~NO_FANOUT~
+write_data[0] => Data_Memory.DATAIN
+write_data[1] => Data_Memory.DATAIN1
+write_data[2] => Data_Memory.DATAIN2
+write_data[3] => Data_Memory.DATAIN3
+write_data[4] => Data_Memory.DATAIN4
+write_data[5] => Data_Memory.DATAIN5
+write_data[6] => Data_Memory.DATAIN6
+write_data[7] => Data_Memory.DATAIN7
+write_data[8] => Data_Memory.data_a[8].DATAA
+write_data[9] => Data_Memory.data_a[9].DATAA
+write_data[10] => Data_Memory.data_a[10].DATAA
+write_data[11] => Data_Memory.data_a[11].DATAA
+write_data[12] => Data_Memory.data_a[12].DATAA
+write_data[13] => Data_Memory.data_a[13].DATAA
+write_data[14] => Data_Memory.data_a[14].DATAA
+write_data[15] => Data_Memory.data_a[15].DATAA
+write_data[16] => Data_Memory.DATAA
+write_data[17] => Data_Memory.DATAA
+write_data[18] => Data_Memory.DATAA
+write_data[19] => Data_Memory.DATAA
+write_data[20] => Data_Memory.DATAA
+write_data[21] => Data_Memory.DATAA
+write_data[22] => Data_Memory.DATAA
+write_data[23] => Data_Memory.DATAA
+write_data[24] => Data_Memory.DATAA
+write_data[25] => Data_Memory.DATAA
+write_data[26] => Data_Memory.DATAA
+write_data[27] => Data_Memory.DATAA
+write_data[28] => Data_Memory.DATAA
+write_data[29] => Data_Memory.DATAA
+write_data[30] => Data_Memory.DATAA
+write_data[31] => Data_Memory.DATAA
+read_signal => Read_data[0]$latch.LATCH_ENABLE
+read_signal => Read_data[1]$latch.LATCH_ENABLE
+read_signal => Read_data[2]$latch.LATCH_ENABLE
+read_signal => Read_data[3]$latch.LATCH_ENABLE
+read_signal => Read_data[4]$latch.LATCH_ENABLE
+read_signal => Read_data[5]$latch.LATCH_ENABLE
+read_signal => Read_data[6]$latch.LATCH_ENABLE
+read_signal => Read_data[7]$latch.LATCH_ENABLE
+read_signal => Read_data[8]$latch.LATCH_ENABLE
+read_signal => Read_data[9]$latch.LATCH_ENABLE
+read_signal => Read_data[10]$latch.LATCH_ENABLE
+read_signal => Read_data[11]$latch.LATCH_ENABLE
+read_signal => Read_data[12]$latch.LATCH_ENABLE
+read_signal => Read_data[13]$latch.LATCH_ENABLE
+read_signal => Read_data[14]$latch.LATCH_ENABLE
+read_signal => Read_data[15]$latch.LATCH_ENABLE
+read_signal => Read_data[16]$latch.LATCH_ENABLE
+read_signal => Read_data[17]$latch.LATCH_ENABLE
+read_signal => Read_data[18]$latch.LATCH_ENABLE
+read_signal => Read_data[19]$latch.LATCH_ENABLE
+read_signal => Read_data[20]$latch.LATCH_ENABLE
+read_signal => Read_data[21]$latch.LATCH_ENABLE
+read_signal => Read_data[22]$latch.LATCH_ENABLE
+read_signal => Read_data[23]$latch.LATCH_ENABLE
+read_signal => Read_data[24]$latch.LATCH_ENABLE
+read_signal => Read_data[25]$latch.LATCH_ENABLE
+read_signal => Read_data[26]$latch.LATCH_ENABLE
+read_signal => Read_data[27]$latch.LATCH_ENABLE
+read_signal => Read_data[28]$latch.LATCH_ENABLE
+read_signal => Read_data[29]$latch.LATCH_ENABLE
+read_signal => Read_data[30]$latch.LATCH_ENABLE
+read_signal => Read_data[31]$latch.LATCH_ENABLE
+write_signal => Data_Memory.we_a.OUTPUTSELECT
+signal_sb => Data_Memory.OUTPUTSELECT
+signal_sb => Data_Memory.data_a[31].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[30].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[29].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[28].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[27].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[26].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[25].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[24].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[23].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[22].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[21].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[20].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[19].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[18].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[17].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[16].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[15].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[14].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[13].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[12].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[11].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[10].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[9].OUTPUTSELECT
+signal_sb => Data_Memory.data_a[8].OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sh => Data_Memory.OUTPUTSELECT
+signal_sw => Data_Memory.DATAA
+clk => ~NO_FANOUT~
+
+
+|MIPS_32bit|ZeroExtendImm_16bit_to_32bit:ZeroExtend_Read_data_memory
+ZeroExtImm_32bit[0] <= Imm_16bit[0].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[1] <= Imm_16bit[1].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[2] <= Imm_16bit[2].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[3] <= Imm_16bit[3].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[4] <= Imm_16bit[4].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[5] <= Imm_16bit[5].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[6] <= Imm_16bit[6].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[7] <= Imm_16bit[7].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[8] <= Imm_16bit[8].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[9] <= Imm_16bit[9].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[10] <= Imm_16bit[10].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[11] <= Imm_16bit[11].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[12] <= Imm_16bit[12].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[13] <= Imm_16bit[13].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[14] <= Imm_16bit[14].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[15] <= Imm_16bit[15].DB_MAX_OUTPUT_PORT_TYPE
+ZeroExtImm_32bit[16] <= <GND>
+ZeroExtImm_32bit[17] <= <GND>
+ZeroExtImm_32bit[18] <= <GND>
+ZeroExtImm_32bit[19] <= <GND>
+ZeroExtImm_32bit[20] <= <GND>
+ZeroExtImm_32bit[21] <= <GND>
+ZeroExtImm_32bit[22] <= <GND>
+ZeroExtImm_32bit[23] <= <GND>
+ZeroExtImm_32bit[24] <= <GND>
+ZeroExtImm_32bit[25] <= <GND>
+ZeroExtImm_32bit[26] <= <GND>
+ZeroExtImm_32bit[27] <= <GND>
+ZeroExtImm_32bit[28] <= <GND>
+ZeroExtImm_32bit[29] <= <GND>
+ZeroExtImm_32bit[30] <= <GND>
+ZeroExtImm_32bit[31] <= <GND>
+Imm_16bit[0] => ZeroExtImm_32bit[0].DATAIN
+Imm_16bit[1] => ZeroExtImm_32bit[1].DATAIN
+Imm_16bit[2] => ZeroExtImm_32bit[2].DATAIN
+Imm_16bit[3] => ZeroExtImm_32bit[3].DATAIN
+Imm_16bit[4] => ZeroExtImm_32bit[4].DATAIN
+Imm_16bit[5] => ZeroExtImm_32bit[5].DATAIN
+Imm_16bit[6] => ZeroExtImm_32bit[6].DATAIN
+Imm_16bit[7] => ZeroExtImm_32bit[7].DATAIN
+Imm_16bit[8] => ZeroExtImm_32bit[8].DATAIN
+Imm_16bit[9] => ZeroExtImm_32bit[9].DATAIN
+Imm_16bit[10] => ZeroExtImm_32bit[10].DATAIN
+Imm_16bit[11] => ZeroExtImm_32bit[11].DATAIN
+Imm_16bit[12] => ZeroExtImm_32bit[12].DATAIN
+Imm_16bit[13] => ZeroExtImm_32bit[13].DATAIN
+Imm_16bit[14] => ZeroExtImm_32bit[14].DATAIN
+Imm_16bit[15] => ZeroExtImm_32bit[15].DATAIN
+
+
+|MIPS_32bit|_8to32:extend_Read_data_memory_8to32
+extended_32bit[0] <= _8bit[0].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[1] <= _8bit[1].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[2] <= _8bit[2].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[3] <= _8bit[3].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[4] <= _8bit[4].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[5] <= _8bit[5].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[6] <= _8bit[6].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[7] <= _8bit[7].DB_MAX_OUTPUT_PORT_TYPE
+extended_32bit[8] <= <GND>
+extended_32bit[9] <= <GND>
+extended_32bit[10] <= <GND>
+extended_32bit[11] <= <GND>
+extended_32bit[12] <= <GND>
+extended_32bit[13] <= <GND>
+extended_32bit[14] <= <GND>
+extended_32bit[15] <= <GND>
+extended_32bit[16] <= <GND>
+extended_32bit[17] <= <GND>
+extended_32bit[18] <= <GND>
+extended_32bit[19] <= <GND>
+extended_32bit[20] <= <GND>
+extended_32bit[21] <= <GND>
+extended_32bit[22] <= <GND>
+extended_32bit[23] <= <GND>
+extended_32bit[24] <= <GND>
+extended_32bit[25] <= <GND>
+extended_32bit[26] <= <GND>
+extended_32bit[27] <= <GND>
+extended_32bit[28] <= <GND>
+extended_32bit[29] <= <GND>
+extended_32bit[30] <= <GND>
+extended_32bit[31] <= <GND>
+_8bit[0] => extended_32bit[0].DATAIN
+_8bit[1] => extended_32bit[1].DATAIN
+_8bit[2] => extended_32bit[2].DATAIN
+_8bit[3] => extended_32bit[3].DATAIN
+_8bit[4] => extended_32bit[4].DATAIN
+_8bit[5] => extended_32bit[5].DATAIN
+_8bit[6] => extended_32bit[6].DATAIN
+_8bit[7] => extended_32bit[7].DATAIN
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters
+result[0] <= mux4_1:output_0.port0
+result[1] <= mux4_1:output_1.port0
+result[2] <= mux4_1:output_2.port0
+result[3] <= mux4_1:output_3.port0
+result[4] <= mux4_1:output_4.port0
+result[5] <= mux4_1:output_5.port0
+result[6] <= mux4_1:output_6.port0
+result[7] <= mux4_1:output_7.port0
+result[8] <= mux4_1:output_8.port0
+result[9] <= mux4_1:output_9.port0
+result[10] <= mux4_1:output_10.port0
+result[11] <= mux4_1:output_11.port0
+result[12] <= mux4_1:output_12.port0
+result[13] <= mux4_1:output_13.port0
+result[14] <= mux4_1:output_14.port0
+result[15] <= mux4_1:output_15.port0
+result[16] <= mux4_1:output_16.port0
+result[17] <= mux4_1:output_17.port0
+result[18] <= mux4_1:output_18.port0
+result[19] <= mux4_1:output_19.port0
+result[20] <= mux4_1:output_20.port0
+result[21] <= mux4_1:output_21.port0
+result[22] <= mux4_1:output_22.port0
+result[23] <= mux4_1:output_23.port0
+result[24] <= mux4_1:output_24.port0
+result[25] <= mux4_1:output_25.port0
+result[26] <= mux4_1:output_26.port0
+result[27] <= mux4_1:output_27.port0
+result[28] <= mux4_1:output_28.port0
+result[29] <= mux4_1:output_29.port0
+result[30] <= mux4_1:output_30.port0
+result[31] <= mux4_1:output_31.port0
+S1 => S1.IN32
+S0 => S0.IN32
+I3[0] => I3[0].IN1
+I3[1] => I3[1].IN1
+I3[2] => I3[2].IN1
+I3[3] => I3[3].IN1
+I3[4] => I3[4].IN1
+I3[5] => I3[5].IN1
+I3[6] => I3[6].IN1
+I3[7] => I3[7].IN1
+I3[8] => I3[8].IN1
+I3[9] => I3[9].IN1
+I3[10] => I3[10].IN1
+I3[11] => I3[11].IN1
+I3[12] => I3[12].IN1
+I3[13] => I3[13].IN1
+I3[14] => I3[14].IN1
+I3[15] => I3[15].IN1
+I3[16] => I3[16].IN1
+I3[17] => I3[17].IN1
+I3[18] => I3[18].IN1
+I3[19] => I3[19].IN1
+I3[20] => I3[20].IN1
+I3[21] => I3[21].IN1
+I3[22] => I3[22].IN1
+I3[23] => I3[23].IN1
+I3[24] => I3[24].IN1
+I3[25] => I3[25].IN1
+I3[26] => I3[26].IN1
+I3[27] => I3[27].IN1
+I3[28] => I3[28].IN1
+I3[29] => I3[29].IN1
+I3[30] => I3[30].IN1
+I3[31] => I3[31].IN1
+I2[0] => I2[0].IN1
+I2[1] => I2[1].IN1
+I2[2] => I2[2].IN1
+I2[3] => I2[3].IN1
+I2[4] => I2[4].IN1
+I2[5] => I2[5].IN1
+I2[6] => I2[6].IN1
+I2[7] => I2[7].IN1
+I2[8] => I2[8].IN1
+I2[9] => I2[9].IN1
+I2[10] => I2[10].IN1
+I2[11] => I2[11].IN1
+I2[12] => I2[12].IN1
+I2[13] => I2[13].IN1
+I2[14] => I2[14].IN1
+I2[15] => I2[15].IN1
+I2[16] => I2[16].IN1
+I2[17] => I2[17].IN1
+I2[18] => I2[18].IN1
+I2[19] => I2[19].IN1
+I2[20] => I2[20].IN1
+I2[21] => I2[21].IN1
+I2[22] => I2[22].IN1
+I2[23] => I2[23].IN1
+I2[24] => I2[24].IN1
+I2[25] => I2[25].IN1
+I2[26] => I2[26].IN1
+I2[27] => I2[27].IN1
+I2[28] => I2[28].IN1
+I2[29] => I2[29].IN1
+I2[30] => I2[30].IN1
+I2[31] => I2[31].IN1
+I1[0] => I1[0].IN1
+I1[1] => I1[1].IN1
+I1[2] => I1[2].IN1
+I1[3] => I1[3].IN1
+I1[4] => I1[4].IN1
+I1[5] => I1[5].IN1
+I1[6] => I1[6].IN1
+I1[7] => I1[7].IN1
+I1[8] => I1[8].IN1
+I1[9] => I1[9].IN1
+I1[10] => I1[10].IN1
+I1[11] => I1[11].IN1
+I1[12] => I1[12].IN1
+I1[13] => I1[13].IN1
+I1[14] => I1[14].IN1
+I1[15] => I1[15].IN1
+I1[16] => I1[16].IN1
+I1[17] => I1[17].IN1
+I1[18] => I1[18].IN1
+I1[19] => I1[19].IN1
+I1[20] => I1[20].IN1
+I1[21] => I1[21].IN1
+I1[22] => I1[22].IN1
+I1[23] => I1[23].IN1
+I1[24] => I1[24].IN1
+I1[25] => I1[25].IN1
+I1[26] => I1[26].IN1
+I1[27] => I1[27].IN1
+I1[28] => I1[28].IN1
+I1[29] => I1[29].IN1
+I1[30] => I1[30].IN1
+I1[31] => I1[31].IN1
+I0[0] => I0[0].IN1
+I0[1] => I0[1].IN1
+I0[2] => I0[2].IN1
+I0[3] => I0[3].IN1
+I0[4] => I0[4].IN1
+I0[5] => I0[5].IN1
+I0[6] => I0[6].IN1
+I0[7] => I0[7].IN1
+I0[8] => I0[8].IN1
+I0[9] => I0[9].IN1
+I0[10] => I0[10].IN1
+I0[11] => I0[11].IN1
+I0[12] => I0[12].IN1
+I0[13] => I0[13].IN1
+I0[14] => I0[14].IN1
+I0[15] => I0[15].IN1
+I0[16] => I0[16].IN1
+I0[17] => I0[17].IN1
+I0[18] => I0[18].IN1
+I0[19] => I0[19].IN1
+I0[20] => I0[20].IN1
+I0[21] => I0[21].IN1
+I0[22] => I0[22].IN1
+I0[23] => I0[23].IN1
+I0[24] => I0[24].IN1
+I0[25] => I0[25].IN1
+I0[26] => I0[26].IN1
+I0[27] => I0[27].IN1
+I0[28] => I0[28].IN1
+I0[29] => I0[29].IN1
+I0[30] => I0[30].IN1
+I0[31] => I0[31].IN1
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_0
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_1
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_2
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_3
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_4
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_5
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_6
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_7
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_8
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_9
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_10
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_11
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_12
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_13
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_14
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_15
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_16
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_17
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_18
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_19
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_20
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_21
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_22
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_23
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_24
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_25
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_26
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_27
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_28
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_29
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_30
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+
+|MIPS_32bit|mux32bit_4_1:selection_of_whichData_writeToRegisters|mux4_1:output_31
+result <= create_result.DB_MAX_OUTPUT_PORT_TYPE
+S1 => andInput2.IN0
+S1 => andInput3.IN0
+S1 => andInput0.IN0
+S1 => andInput1.IN0
+S0 => andInput1.IN1
+S0 => andInput3.IN1
+S0 => andInput0.IN1
+S0 => andInput2.IN1
+I3 => andInput3.IN2
+I2 => andInput2.IN2
+I1 => andInput1.IN2
+I0 => andInput0.IN2
+
+

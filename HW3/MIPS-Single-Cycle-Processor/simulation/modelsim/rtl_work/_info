@@ -1,0 +1,357 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\workspace\org\hw3_new\1801042004_murat_yildiz\simulation\modelsim
+v_8to32
+IRdEUbCCjA8DF[fUUzE@gT0
+VfcBO0aJ1k@1DjaIkiJi_F1
+Z1 dC:\altera\13.1\workspace\org\hw3_new\1801042004_murat_yildiz\simulation\modelsim
+w1576101332
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_8to32.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_8to32.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz -O0
+n@_8to32
+!i10b 1
+!s100 g6`226APQGGYLzP=ABUY[1
+!s85 0
+!s108 1579167795.157000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_8to32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_8to32.v|
+!s101 -O0
+v_xor
+IbZXm`GAlR;FGijHR6WRnK0
+V[A?TEl7KDQ[dN170o@RmG1
+R1
+w1575390355
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_xor.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_xor.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@_xor
+!i10b 1
+!s100 LEmjaRc?c_m<>FgAQ22mM3
+!s85 0
+!s108 1579167795.079000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_xor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_xor.v|
+!s101 -O0
+vALU1bit
+IXAcUCN19<EE>oY@G?B]md3
+V[=fzI6Jm7Sh6^:Q^AQE0c3
+R1
+w1575387773
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU1bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU1bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@a@l@u1bit
+!i10b 1
+!s100 H6?a[8k^Y8Y5Zncd:Q0ib2
+!s85 0
+!s108 1579167795.008000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU1bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU1bit.v|
+!s101 -O0
+vALU32bit
+IIEhQY6G;UMaPi;`RW=FH]1
+VZ2JF<UZH3NG2]6=Mk]1CL3
+R1
+w1575393909
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU32bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@a@l@u32bit
+!i10b 1
+!s100 l05N=_fRA3ojelK>bb8Ce0
+!s85 0
+!s108 1579167794.933000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU32bit.v|
+!s101 -O0
+vControl_Unit
+IOS0?33XF`:Fcznn=8OhRi1
+V87bTCZn>ea99USd4=NRgF0
+R1
+w1576240761
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Control_Unit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Control_Unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@control_@unit
+!i10b 1
+!s100 BTOK<@b`9IQfUP]85ADl11
+!s85 0
+!s108 1579167794.863000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Control_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Control_Unit.v|
+!s101 -O0
+vData_Memory_Unit_32bit
+I^I4CYD2:^Ic:E4za=L?j=3
+V2^VM7Hie0^CeER<YIlA<V1
+R1
+w1576359327
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Data_Memory_Unit_32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Data_Memory_Unit_32bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@data_@memory_@unit_32bit
+!i10b 1
+!s100 MbCkJ];^UnVVN31PgEnfO3
+!s85 0
+!s108 1579167795.294000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Data_Memory_Unit_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Data_Memory_Unit_32bit.v|
+!s101 -O0
+vImmediate_16to32
+In^FTXaPj[BB^bDR2>U0eJ3
+V=kaz>PG>3UL6bzkDOE@b=3
+R1
+w1576100281
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Immediate_16to32.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Immediate_16to32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@immediate_16to32
+!i10b 1
+!s100 a0DNbk;28>GBM=CzDnRoh1
+!s85 0
+!s108 1579167794.794000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Immediate_16to32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Immediate_16to32.v|
+!s101 -O0
+vInstruction_Memory_Unit_32bit
+IGDcLL;mCZT@0imRaF>fjQ1
+V::I0NPflI6<6GKdcLi9]]0
+R1
+w1576348511
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Instruction_Memory_Unit_32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Instruction_Memory_Unit_32bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@instruction_@memory_@unit_32bit
+!i10b 1
+!s100 hH?klXTNY`OQA`[V4U3LT1
+!s85 0
+!s108 1579167795.755000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Instruction_Memory_Unit_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Instruction_Memory_Unit_32bit.v|
+!s101 -O0
+vMIPS_32bit
+ILn^bh<4BlEl_T43L4Y6M]2
+V2@Hc_ZTSfR<DA^GTN6`mm0
+R1
+w1576360372
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@i@p@s_32bit
+!i10b 1
+!s100 b8abk2na2:_KD2J=RKh`l0
+!s85 0
+!s108 1579167794.721000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit.v|
+!s101 -O0
+vMIPS_32bit_testbench
+!i10b 1
+!s100 oVBXUYZ<XCGQK8AVa_HSO3
+I[CMIIWR7MiPB>[QzAe68L2
+VMMPgcQ:Jnf8;9lhl1FFT12
+R1
+w1577536307
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit_testbench.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit_testbench.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1579167805.430000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit_testbench.v|
+!s90 -reportprogress|300|-work|work|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit_testbench.v|
+!s101 -O0
+o-work work -O0
+n@m@i@p@s_32bit_testbench
+vmux2_1
+I^3GHlL8@:G3k@;feHdR_43
+V6VoT9E[3`Y0H_IKW<zeFK2
+R1
+w1576179585
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux2_1.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux2_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 DNQgSgJf=[mYLEXWJ9fO81
+!s85 0
+!s108 1579167794.652000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux2_1.v|
+!s101 -O0
+vmux32bit_2_1
+Io^KFln<eN<B=9Sfo3@gMP1
+VeeR]531zVBDLdHS_bhRa_2
+R1
+w1576183322
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_2_1.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_2_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ]Qbf9E90N^=>k:@[>LbBR1
+!s85 0
+!s108 1579167794.522000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_2_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_2_1.v|
+!s101 -O0
+vmux32bit_4_1
+IDdULXC`ziQ19RzRHId5oV3
+V52moBfHHQ8n:<L3DHC6nW0
+R1
+w1576185743
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_4_1.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_4_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1=CYTjYZgYJPb7CM^a9173
+!s85 0
+!s108 1579167794.454000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_4_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_4_1.v|
+!s101 -O0
+vmux4_1
+IAa^bj_bBaT`7[P6ER`Ffl0
+VN@B<=jIEk1mP90V0adoSZ0
+R1
+w1575390734
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux4_1.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux4_1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1QU7a4@e<;;OkcR=hMiOL0
+!s85 0
+!s108 1579167794.586000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux4_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux4_1.v|
+!s101 -O0
+vRegisters_Unit_32bit
+I>0LCd5HMUdG:dhJ<1aX]40
+VB9I3WHNkA?Ye7ea]c8@U=3
+R1
+w1576357889
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Registers_Unit_32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Registers_Unit_32bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@registers_@unit_32bit
+!i10b 1
+!s100 ZM`e6]9H<0B>f>@1C>diU1
+!s85 0
+!s108 1579167795.227000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Registers_Unit_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Registers_Unit_32bit.v|
+!s101 -O0
+vSignExtendImm_16bit_to_32bit
+I5P2=UFL:85YEHERI??aj92
+VXN=3Oojl6cPBAo7hV0h>C3
+R1
+w1575537314
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/SignExtendImm_16bit_to_32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/SignExtendImm_16bit_to_32bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@sign@extend@imm_16bit_to_32bit
+!i10b 1
+!s100 iVLXmT]7N?8g=^:47Gk_52
+!s85 0
+!s108 1579167794.376000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/SignExtendImm_16bit_to_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/SignExtendImm_16bit_to_32bit.v|
+!s101 -O0
+vZeroExtendImm_16bit_to_32bit
+IcMbPDd8C:A^C4L_?]6Q`z0
+V76U@9Wf6Sjd_iGl>N5ZX40
+R1
+w1576100322
+8C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ZeroExtendImm_16bit_to_32bit.v
+FC:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ZeroExtendImm_16bit_to_32bit.v
+L0 1
+R2
+r1
+31
+R3
+n@zero@extend@imm_16bit_to_32bit
+R4
+!i10b 1
+!s100 jHCXMdT=8FR2=?WP7mjVH0
+!s85 0
+!s108 1579167794.298000
+!s107 C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ZeroExtendImm_16bit_to_32bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz|C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ZeroExtendImm_16bit_to_32bit.v|
+!s101 -O0

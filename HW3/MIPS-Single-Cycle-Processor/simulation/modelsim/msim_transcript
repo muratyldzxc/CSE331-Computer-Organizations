@@ -1,0 +1,1625 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do project03_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ZeroExtendImm_16bit_to_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ZeroExtendImm_16bit_to_32bit
+# 
+# Top level modules:
+# 	ZeroExtendImm_16bit_to_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/SignExtendImm_16bit_to_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SignExtendImm_16bit_to_32bit
+# 
+# Top level modules:
+# 	SignExtendImm_16bit_to_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_4_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux32bit_4_1
+# 
+# Top level modules:
+# 	mux32bit_4_1
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux32bit_2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux32bit_2_1
+# 
+# Top level modules:
+# 	mux32bit_2_1
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux4_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4_1
+# 
+# Top level modules:
+# 	mux4_1
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/mux2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	mux2_1
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MIPS_32bit
+# 
+# Top level modules:
+# 	MIPS_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Immediate_16to32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Immediate_16to32
+# 
+# Top level modules:
+# 	Immediate_16to32
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Control_Unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU32bit
+# 
+# Top level modules:
+# 	ALU32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/ALU1bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU1bit
+# 
+# Top level modules:
+# 	ALU1bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_xor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _xor
+# 
+# Top level modules:
+# 	_xor
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/_8to32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module _8to32
+# 
+# Top level modules:
+# 	_8to32
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Registers_Unit_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Registers_Unit_32bit
+# 
+# Top level modules:
+# 	Registers_Unit_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Data_Memory_Unit_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Data_Memory_Unit_32bit
+# 
+# Top level modules:
+# 	Data_Memory_Unit_32bit
+# vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz {C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/Instruction_Memory_Unit_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Instruction_Memory_Unit_32bit
+# 
+# Top level modules:
+# 	Instruction_Memory_Unit_32bit
+# 
+vlog -reportprogress 300 -work work C:/altera/13.1/workspace/org/hw3_new/1801042004_murat_yildiz/MIPS_32bit_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MIPS_32bit_testbench
+# 
+# Top level modules:
+# 	MIPS_32bit_testbench
+vsim work.MIPS_32bit_testbench
+# vsim work.MIPS_32bit_testbench 
+# Loading work.MIPS_32bit_testbench
+# Loading work.MIPS_32bit
+# Loading work.Instruction_Memory_Unit_32bit
+# Loading work.Control_Unit
+# Loading work.Registers_Unit_32bit
+# Loading work.ZeroExtendImm_16bit_to_32bit
+# Loading work.SignExtendImm_16bit_to_32bit
+# Loading work.Immediate_16to32
+# Loading work.mux32bit_2_1
+# Loading work.mux2_1
+# Loading work.ALU32bit
+# Loading work.ALU1bit
+# Loading work._xor
+# Loading work.mux4_1
+# Loading work.Data_Memory_Unit_32bit
+# Loading work._8to32
+# Loading work.mux32bit_4_1
+step -current
+#  time:  0 
+#  clock: 0 
+#  PC unit: PC:  0 
+#  Instruction Memory Unit:
+#  instruction: 10001100010000100000000000011100 
+#  Opcode= 23 , rs =  2 , rt =  2 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 24 Read_data_2: 24 Write_data_register: 20 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 52 read_data_memory: 20 write_data_memory: 24 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 20 ImmediateExtended: 1835008 _8to32_Read_data_memory: 20 ZeroExtended_Read_data_memory: 20  result of mux: Write_data_register: 20 
+# 
+# 
+#   
+#  time: 50 
+#  clock: 1 
+#  PC unit: PC:  1 
+#  Instruction Memory Unit:
+#  instruction: 10001101001011100000000000001100 
+#  Opcode= 23 , rs =  9 , rt = 14 , immediate = 12 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 27 Write_data_register: 17 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 12 signExtended: 12 ALU_input_from_mux: 12 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 17 read_data_memory: 17 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 17 ImmediateExtended: 786432 _8to32_Read_data_memory: 17 ZeroExtended_Read_data_memory: 17  result of mux: Write_data_register: 17 
+# 
+# 
+#   
+#  time: 100 
+#  clock: 0 
+#  PC unit: PC:  1 
+#  Instruction Memory Unit:
+#  instruction: 10001101001011100000000000001100 
+#  Opcode= 23 , rs =  9 , rt = 14 , immediate = 12 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 27 Write_data_register: 17 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 12 signExtended: 12 ALU_input_from_mux: 12 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 17 read_data_memory: 17 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 17 ImmediateExtended: 786432 _8to32_Read_data_memory: 17 ZeroExtended_Read_data_memory: 17  result of mux: Write_data_register: 17 
+# 
+# 
+#   
+#  time: 150 
+#  clock: 1 
+#  PC unit: PC:  2 
+#  Instruction Memory Unit:
+#  instruction: 10010000111010100000000000010100 
+#  Opcode= 24 , rs =  7 , rt = 10 , immediate = 20 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  7 Read_data_2: 27 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 20 signExtended: 20 ALU_input_from_mux: 20 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 27 read_data_memory: 27 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 27 ImmediateExtended: 1310720 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 200 
+#  clock: 0 
+#  PC unit: PC:  2 
+#  Instruction Memory Unit:
+#  instruction: 10010000111010100000000000010100 
+#  Opcode= 24 , rs =  7 , rt = 10 , immediate = 20 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  7 Read_data_2: 27 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 20 signExtended: 20 ALU_input_from_mux: 20 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 27 read_data_memory: 27 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 27 ImmediateExtended: 1310720 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 250 
+#  clock: 1 
+#  PC unit: PC:  3 
+#  Instruction Memory Unit:
+#  instruction: 10010001001100100000000000001010 
+#  Opcode= 24 , rs =  9 , rt = 18 , immediate = 10 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 15 Write_data_register: 15 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 10 signExtended: 10 ALU_input_from_mux: 10 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 15 read_data_memory: 15 write_data_memory: 15 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 15 ImmediateExtended: 655360 _8to32_Read_data_memory: 15 ZeroExtended_Read_data_memory: 15  result of mux: Write_data_register: 15 
+# 
+# 
+#   
+#  time: 300 
+#  clock: 0 
+#  PC unit: PC:  3 
+#  Instruction Memory Unit:
+#  instruction: 10010001001100100000000000001010 
+#  Opcode= 24 , rs =  9 , rt = 18 , immediate = 10 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 15 Write_data_register: 15 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 10 signExtended: 10 ALU_input_from_mux: 10 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 15 read_data_memory: 15 write_data_memory: 15 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 15 ImmediateExtended: 655360 _8to32_Read_data_memory: 15 ZeroExtended_Read_data_memory: 15  result of mux: Write_data_register: 15 
+# 
+# 
+#   
+#  time: 350 
+#  clock: 1 
+#  PC unit: PC:  4 
+#  Instruction Memory Unit:
+#  instruction: 10000110100010010000000000010001 
+#  Opcode= 21 , rs = 20 , rt =  9 , immediate = 17 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 20 Read_data_2:  5 Write_data_register:  5 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 17 signExtended: 17 ALU_input_from_mux: 17 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 37 read_data_memory:  5 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  5 ImmediateExtended: 1114112 _8to32_Read_data_memory:  5 ZeroExtended_Read_data_memory:  5  result of mux: Write_data_register:  5 
+# 
+# 
+#   
+#  time: 400 
+#  clock: 0 
+#  PC unit: PC:  4 
+#  Instruction Memory Unit:
+#  instruction: 10000110100010010000000000010001 
+#  Opcode= 21 , rs = 20 , rt =  9 , immediate = 17 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 20 Read_data_2:  5 Write_data_register:  5 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 17 signExtended: 17 ALU_input_from_mux: 17 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 37 read_data_memory:  5 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  5 ImmediateExtended: 1114112 _8to32_Read_data_memory:  5 ZeroExtended_Read_data_memory:  5  result of mux: Write_data_register:  5 
+# 
+# 
+#   
+#  time: 450 
+#  clock: 1 
+#  PC unit: PC:  5 
+#  Instruction Memory Unit:
+#  instruction: 10000110010111010000000000011100 
+#  Opcode= 21 , rs = 18 , rt = 29 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 32 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 43 read_data_memory: 32 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 32 ImmediateExtended: 1835008 _8to32_Read_data_memory: 32 ZeroExtended_Read_data_memory: 32  result of mux: Write_data_register: 32 
+# 
+# 
+#   
+#  time: 500 
+#  clock: 0 
+#  PC unit: PC:  5 
+#  Instruction Memory Unit:
+#  instruction: 10000110010111010000000000011100 
+#  Opcode= 21 , rs = 18 , rt = 29 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 32 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 43 read_data_memory: 32 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 32 ImmediateExtended: 1835008 _8to32_Read_data_memory: 32 ZeroExtended_Read_data_memory: 32  result of mux: Write_data_register: 32 
+# 
+# 
+#   
+#  time: 550 
+#  clock: 1 
+#  PC unit: PC:  6 
+#  Instruction Memory Unit:
+#  instruction: 10010101111101110000000000101001 
+#  Opcode= 25 , rs = 15 , rt = 23 , immediate = 41 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 96 Read_data_2:  9 Write_data_register:  9 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 41 signExtended: 41 ALU_input_from_mux: 41 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 137 read_data_memory:  9 write_data_memory:  9 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  9 ImmediateExtended: 2686976 _8to32_Read_data_memory:  9 ZeroExtended_Read_data_memory:  9  result of mux: Write_data_register:  9 
+# 
+# 
+#   
+#  time: 600 
+#  clock: 0 
+#  PC unit: PC:  6 
+#  Instruction Memory Unit:
+#  instruction: 10010101111101110000000000101001 
+#  Opcode= 25 , rs = 15 , rt = 23 , immediate = 41 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 96 Read_data_2:  9 Write_data_register:  9 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 41 signExtended: 41 ALU_input_from_mux: 41 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 137 read_data_memory:  9 write_data_memory:  9 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  9 ImmediateExtended: 2686976 _8to32_Read_data_memory:  9 ZeroExtended_Read_data_memory:  9  result of mux: Write_data_register:  9 
+# 
+# 
+#   
+#  time: 650 
+#  clock: 1 
+#  PC unit: PC:  7 
+#  Instruction Memory Unit:
+#  instruction: 10010111101011100000000001011011 
+#  Opcode= 25 , rs = 29 , rt = 14 , immediate = 91 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 32 Read_data_2: 17 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 91 signExtended: 91 ALU_input_from_mux: 91 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 123 read_data_memory: 27 write_data_memory: 17 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 5963776 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 700 
+#  clock: 0 
+#  PC unit: PC:  7 
+#  Instruction Memory Unit:
+#  instruction: 10010111101011100000000001011011 
+#  Opcode= 25 , rs = 29 , rt = 14 , immediate = 91 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 32 Read_data_2: 17 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 91 signExtended: 91 ALU_input_from_mux: 91 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 123 read_data_memory: 27 write_data_memory: 17 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 5963776 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 750 
+#  clock: 1 
+#  PC unit: PC:  8 
+#  Instruction Memory Unit:
+#  instruction: 00111101010010110100111010010010 
+#  Opcode= 0f , rs = 10 , rt = 11 , immediate = 20114 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 27 Read_data_2: 1318191104 Write_data_register: 1318191104 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 20114 signExtended: 20114 ALU_input_from_mux: 20114 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 20141 read_data_memory: 27 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 1318191104 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 1318191104 
+# 
+# 
+#   
+#  time: 800 
+#  clock: 0 
+#  PC unit: PC:  8 
+#  Instruction Memory Unit:
+#  instruction: 00111101010010110100111010010010 
+#  Opcode= 0f , rs = 10 , rt = 11 , immediate = 20114 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 27 Read_data_2: 1318191104 Write_data_register: 1318191104 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 20114 signExtended: 20114 ALU_input_from_mux: 20114 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 20141 read_data_memory: 27 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 1318191104 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 1318191104 
+# 
+# 
+#   
+#  time: 850 
+#  clock: 1 
+#  PC unit: PC:  9 
+#  Instruction Memory Unit:
+#  instruction: 00111101011000001010001000100101 
+#  Opcode= 0f , rs = 11 , rt =  0 , immediate = 41509 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 1318191104 Read_data_2: 2720333824 Write_data_register: 2720333824 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 41509 signExtended: 4294943269 ALU_input_from_mux: 41509 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 1318232613 read_data_memory: 27 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 2720333824 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 2720333824 
+# 
+# 
+#   
+#  time: 900 
+#  clock: 0 
+#  PC unit: PC:  9 
+#  Instruction Memory Unit:
+#  instruction: 00111101011000001010001000100101 
+#  Opcode= 0f , rs = 11 , rt =  0 , immediate = 41509 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 1318191104 Read_data_2: 2720333824 Write_data_register: 2720333824 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 41509 signExtended: 4294943269 ALU_input_from_mux: 41509 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 1318232613 read_data_memory: 27 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 2720333824 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 2720333824 
+# 
+# 
+#   
+#  time: 950 
+#  clock: 1 
+#  PC unit: PC: 10 
+#  Instruction Memory Unit:
+#  instruction: 10001110011111110000000010011111 
+#  Opcode= 23 , rs = 19 , rt = 31 , immediate = 159 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 19 Read_data_2: 18 Write_data_register: 18 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 159 signExtended: 159 ALU_input_from_mux: 159 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 178 read_data_memory: 18 write_data_memory: 18 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 18 ImmediateExtended: 10420224 _8to32_Read_data_memory: 18 ZeroExtended_Read_data_memory: 18  result of mux: Write_data_register: 18 
+# 
+# 
+#   
+#  time: 1000 
+#  clock: 0 
+#  PC unit: PC: 10 
+#  Instruction Memory Unit:
+#  instruction: 10001110011111110000000010011111 
+#  Opcode= 23 , rs = 19 , rt = 31 , immediate = 159 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 19 Read_data_2: 18 Write_data_register: 18 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 159 signExtended: 159 ALU_input_from_mux: 159 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 178 read_data_memory: 18 write_data_memory: 18 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 18 ImmediateExtended: 10420224 _8to32_Read_data_memory: 18 ZeroExtended_Read_data_memory: 18  result of mux: Write_data_register: 18 
+# 
+# 
+#   
+#  time: 1050 
+#  clock: 1 
+#  PC unit: PC: 11 
+#  Instruction Memory Unit:
+#  instruction: 10001110101110000000000010000010 
+#  Opcode= 23 , rs = 21 , rt = 24 , immediate = 130 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 21 Read_data_2: 23 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 130 signExtended: 130 ALU_input_from_mux: 130 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 151 read_data_memory: 23 write_data_memory: 23 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 8519680 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1100 
+#  clock: 0 
+#  PC unit: PC: 11 
+#  Instruction Memory Unit:
+#  instruction: 10001110101110000000000010000010 
+#  Opcode= 23 , rs = 21 , rt = 24 , immediate = 130 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 21 Read_data_2: 23 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 130 signExtended: 130 ALU_input_from_mux: 130 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 151 read_data_memory: 23 write_data_memory: 23 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 8519680 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1150 
+#  clock: 1 
+#  PC unit: PC: 12 
+#  Instruction Memory Unit:
+#  instruction: 10100001101010100000000000011011 
+#  Opcode= 28 , rs = 13 , rt = 10 , immediate = 27 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  9 Read_data_2: 27 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 27 signExtended: 27 ALU_input_from_mux: 27 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 36 read_data_memory: 23 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1769472 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1200 
+#  clock: 0 
+#  PC unit: PC: 12 
+#  Instruction Memory Unit:
+#  instruction: 10100001101010100000000000011011 
+#  Opcode= 28 , rs = 13 , rt = 10 , immediate = 27 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  9 Read_data_2: 27 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 27 signExtended: 27 ALU_input_from_mux: 27 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 36 read_data_memory: 23 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1769472 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1250 
+#  clock: 1 
+#  PC unit: PC: 13 
+#  Instruction Memory Unit:
+#  instruction: 10100011001111100000000010011011 
+#  Opcode= 28 , rs = 25 , rt = 30 , immediate = 155 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 25 Read_data_2: 30 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 155 signExtended: 155 ALU_input_from_mux: 155 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 180 read_data_memory: 23 write_data_memory: 30 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 10158080 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1300 
+#  clock: 0 
+#  PC unit: PC: 13 
+#  Instruction Memory Unit:
+#  instruction: 10100011001111100000000010011011 
+#  Opcode= 28 , rs = 25 , rt = 30 , immediate = 155 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 25 Read_data_2: 30 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 155 signExtended: 155 ALU_input_from_mux: 155 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 180 read_data_memory: 23 write_data_memory: 30 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 10158080 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1350 
+#  clock: 1 
+#  PC unit: PC: 14 
+#  Instruction Memory Unit:
+#  instruction: 10100101001010110000000001001010 
+#  Opcode= 29 , rs =  9 , rt = 11 , immediate = 74 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  5 Read_data_2: 1318191104 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 74 signExtended: 74 ALU_input_from_mux: 74 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 79 read_data_memory: 23 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 4849664 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1400 
+#  clock: 0 
+#  PC unit: PC: 14 
+#  Instruction Memory Unit:
+#  instruction: 10100101001010110000000001001010 
+#  Opcode= 29 , rs =  9 , rt = 11 , immediate = 74 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  5 Read_data_2: 1318191104 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 74 signExtended: 74 ALU_input_from_mux: 74 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 79 read_data_memory: 23 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 4849664 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1450 
+#  clock: 1 
+#  PC unit: PC: 15 
+#  Instruction Memory Unit:
+#  instruction: 10100110010010010000000010101100 
+#  Opcode= 29 , rs = 18 , rt =  9 , immediate = 172 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2:  5 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 172 signExtended: 172 ALU_input_from_mux: 172 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 187 read_data_memory: 23 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 11272192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1500 
+#  clock: 0 
+#  PC unit: PC: 15 
+#  Instruction Memory Unit:
+#  instruction: 10100110010010010000000010101100 
+#  Opcode= 29 , rs = 18 , rt =  9 , immediate = 172 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2:  5 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 172 signExtended: 172 ALU_input_from_mux: 172 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 187 read_data_memory: 23 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 11272192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1550 
+#  clock: 1 
+#  PC unit: PC: 16 
+#  Instruction Memory Unit:
+#  instruction: 10101101111000000000000000101111 
+#  Opcode= 2b , rs = 15 , rt =  0 , immediate = 47 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 96 Read_data_2: 2720333824 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 47 signExtended: 47 ALU_input_from_mux: 47 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 143 read_data_memory: 23 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 3080192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1600 
+#  clock: 0 
+#  PC unit: PC: 16 
+#  Instruction Memory Unit:
+#  instruction: 10101101111000000000000000101111 
+#  Opcode= 2b , rs = 15 , rt =  0 , immediate = 47 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 96 Read_data_2: 2720333824 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 47 signExtended: 47 ALU_input_from_mux: 47 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 143 read_data_memory: 23 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 3080192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1650 
+#  clock: 1 
+#  PC unit: PC: 17 
+#  Instruction Memory Unit:
+#  instruction: 10101110010011000000000000011100 
+#  Opcode= 2b , rs = 18 , rt = 12 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 43 read_data_memory: 23 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1835008 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1700 
+#  clock: 0 
+#  PC unit: PC: 17 
+#  Instruction Memory Unit:
+#  instruction: 10101110010011000000000000011100 
+#  Opcode= 2b , rs = 18 , rt = 12 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 43 read_data_memory: 23 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1835008 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+vsim work.MIPS_32bit_testbench
+# vsim work.MIPS_32bit_testbench 
+# Loading work.MIPS_32bit_testbench
+# Loading work.MIPS_32bit
+# Loading work.Instruction_Memory_Unit_32bit
+# Loading work.Control_Unit
+# Loading work.Registers_Unit_32bit
+# Loading work.ZeroExtendImm_16bit_to_32bit
+# Loading work.SignExtendImm_16bit_to_32bit
+# Loading work.Immediate_16to32
+# Loading work.mux32bit_2_1
+# Loading work.mux2_1
+# Loading work.ALU32bit
+# Loading work.ALU1bit
+# Loading work._xor
+# Loading work.mux4_1
+# Loading work.Data_Memory_Unit_32bit
+# Loading work._8to32
+# Loading work.mux32bit_4_1
+step -current
+#  time:  0 
+#  clock: 0 
+#  PC unit: PC:  0 
+#  Instruction Memory Unit:
+#  instruction: 10001100010000100000000000011100 
+#  Opcode= 23 , rs =  2 , rt =  2 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 20 Read_data_2: 20 Write_data_register: 1920 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 48 read_data_memory: 1920 write_data_memory: 20 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 1920 ImmediateExtended: 1835008 _8to32_Read_data_memory: 128 ZeroExtended_Read_data_memory: 1920  result of mux: Write_data_register: 1920 
+# 
+# 
+#   
+#  time: 50 
+#  clock: 1 
+#  PC unit: PC:  1 
+#  Instruction Memory Unit:
+#  instruction: 10001101001011100000000000001100 
+#  Opcode= 23 , rs =  9 , rt = 14 , immediate = 12 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 27 Write_data_register: 17 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 12 signExtended: 12 ALU_input_from_mux: 12 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 17 read_data_memory: 17 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 17 ImmediateExtended: 786432 _8to32_Read_data_memory: 17 ZeroExtended_Read_data_memory: 17  result of mux: Write_data_register: 17 
+# 
+# 
+#   
+#  time: 100 
+#  clock: 0 
+#  PC unit: PC:  1 
+#  Instruction Memory Unit:
+#  instruction: 10001101001011100000000000001100 
+#  Opcode= 23 , rs =  9 , rt = 14 , immediate = 12 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 27 Write_data_register: 17 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 12 signExtended: 12 ALU_input_from_mux: 12 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 17 read_data_memory: 17 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 17 ImmediateExtended: 786432 _8to32_Read_data_memory: 17 ZeroExtended_Read_data_memory: 17  result of mux: Write_data_register: 17 
+# 
+# 
+#   
+#  time: 150 
+#  clock: 1 
+#  PC unit: PC:  2 
+#  Instruction Memory Unit:
+#  instruction: 10010000111010100000000000010100 
+#  Opcode= 24 , rs =  7 , rt = 10 , immediate = 20 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  7 Read_data_2: 27 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 20 signExtended: 20 ALU_input_from_mux: 20 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 27 read_data_memory: 27 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 27 ImmediateExtended: 1310720 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 200 
+#  clock: 0 
+#  PC unit: PC:  2 
+#  Instruction Memory Unit:
+#  instruction: 10010000111010100000000000010100 
+#  Opcode= 24 , rs =  7 , rt = 10 , immediate = 20 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  7 Read_data_2: 27 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 20 signExtended: 20 ALU_input_from_mux: 20 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 27 read_data_memory: 27 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 27 ImmediateExtended: 1310720 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 250 
+#  clock: 1 
+#  PC unit: PC:  3 
+#  Instruction Memory Unit:
+#  instruction: 10010001001100100000000000001010 
+#  Opcode= 24 , rs =  9 , rt = 18 , immediate = 10 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 15 Write_data_register: 15 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 10 signExtended: 10 ALU_input_from_mux: 10 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 15 read_data_memory: 15 write_data_memory: 15 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 15 ImmediateExtended: 655360 _8to32_Read_data_memory: 15 ZeroExtended_Read_data_memory: 15  result of mux: Write_data_register: 15 
+# 
+# 
+#   
+#  time: 300 
+#  clock: 0 
+#  PC unit: PC:  3 
+#  Instruction Memory Unit:
+#  instruction: 10010001001100100000000000001010 
+#  Opcode= 24 , rs =  9 , rt = 18 , immediate = 10 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1:  5 Read_data_2: 15 Write_data_register: 15 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 10 signExtended: 10 ALU_input_from_mux: 10 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 15 read_data_memory: 15 write_data_memory: 15 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 0 
+#  read_data_memory: 15 ImmediateExtended: 655360 _8to32_Read_data_memory: 15 ZeroExtended_Read_data_memory: 15  result of mux: Write_data_register: 15 
+# 
+# 
+#   
+#  time: 350 
+#  clock: 1 
+#  PC unit: PC:  4 
+#  Instruction Memory Unit:
+#  instruction: 10000110100010010000000000010001 
+#  Opcode= 21 , rs = 20 , rt =  9 , immediate = 17 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 20 Read_data_2:  5 Write_data_register:  5 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 17 signExtended: 17 ALU_input_from_mux: 17 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 37 read_data_memory:  5 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  5 ImmediateExtended: 1114112 _8to32_Read_data_memory:  5 ZeroExtended_Read_data_memory:  5  result of mux: Write_data_register:  5 
+# 
+# 
+#   
+#  time: 400 
+#  clock: 0 
+#  PC unit: PC:  4 
+#  Instruction Memory Unit:
+#  instruction: 10000110100010010000000000010001 
+#  Opcode= 21 , rs = 20 , rt =  9 , immediate = 17 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 20 Read_data_2:  5 Write_data_register:  5 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 17 signExtended: 17 ALU_input_from_mux: 17 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 37 read_data_memory:  5 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  5 ImmediateExtended: 1114112 _8to32_Read_data_memory:  5 ZeroExtended_Read_data_memory:  5  result of mux: Write_data_register:  5 
+# 
+# 
+#   
+#  time: 450 
+#  clock: 1 
+#  PC unit: PC:  5 
+#  Instruction Memory Unit:
+#  instruction: 10000110010111010000000000011100 
+#  Opcode= 21 , rs = 18 , rt = 29 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 32 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 43 read_data_memory: 32 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 32 ImmediateExtended: 1835008 _8to32_Read_data_memory: 32 ZeroExtended_Read_data_memory: 32  result of mux: Write_data_register: 32 
+# 
+# 
+#   
+#  time: 500 
+#  clock: 0 
+#  PC unit: PC:  5 
+#  Instruction Memory Unit:
+#  instruction: 10000110010111010000000000011100 
+#  Opcode= 21 , rs = 18 , rt = 29 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 32 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 43 read_data_memory: 32 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 32 ImmediateExtended: 1835008 _8to32_Read_data_memory: 32 ZeroExtended_Read_data_memory: 32  result of mux: Write_data_register: 32 
+# 
+# 
+#   
+#  time: 550 
+#  clock: 1 
+#  PC unit: PC:  6 
+#  Instruction Memory Unit:
+#  instruction: 10010101111101110000000000101001 
+#  Opcode= 25 , rs = 15 , rt = 23 , immediate = 41 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 96 Read_data_2:  9 Write_data_register:  9 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 41 signExtended: 41 ALU_input_from_mux: 41 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 137 read_data_memory:  9 write_data_memory:  9 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  9 ImmediateExtended: 2686976 _8to32_Read_data_memory:  9 ZeroExtended_Read_data_memory:  9  result of mux: Write_data_register:  9 
+# 
+# 
+#   
+#  time: 600 
+#  clock: 0 
+#  PC unit: PC:  6 
+#  Instruction Memory Unit:
+#  instruction: 10010101111101110000000000101001 
+#  Opcode= 25 , rs = 15 , rt = 23 , immediate = 41 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 96 Read_data_2:  9 Write_data_register:  9 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 41 signExtended: 41 ALU_input_from_mux: 41 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 137 read_data_memory:  9 write_data_memory:  9 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory:  9 ImmediateExtended: 2686976 _8to32_Read_data_memory:  9 ZeroExtended_Read_data_memory:  9  result of mux: Write_data_register:  9 
+# 
+# 
+#   
+#  time: 650 
+#  clock: 1 
+#  PC unit: PC:  7 
+#  Instruction Memory Unit:
+#  instruction: 10010111101011100000000001011011 
+#  Opcode= 25 , rs = 29 , rt = 14 , immediate = 91 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 32 Read_data_2: 17 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 91 signExtended: 91 ALU_input_from_mux: 91 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 123 read_data_memory: 27 write_data_memory: 17 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 5963776 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 700 
+#  clock: 0 
+#  PC unit: PC:  7 
+#  Instruction Memory Unit:
+#  instruction: 10010111101011100000000001011011 
+#  Opcode= 25 , rs = 29 , rt = 14 , immediate = 91 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 32 Read_data_2: 17 Write_data_register: 27 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 91 signExtended: 91 ALU_input_from_mux: 91 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 123 read_data_memory: 27 write_data_memory: 17 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 1 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 5963776 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 27 
+# 
+# 
+#   
+#  time: 750 
+#  clock: 1 
+#  PC unit: PC:  8 
+#  Instruction Memory Unit:
+#  instruction: 00111101010010110100111010010010 
+#  Opcode= 0f , rs = 10 , rt = 11 , immediate = 20114 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 27 Read_data_2: 1318191104 Write_data_register: 1318191104 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 20114 signExtended: 20114 ALU_input_from_mux: 20114 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 20141 read_data_memory: 27 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 1318191104 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 1318191104 
+# 
+# 
+#   
+#  time: 800 
+#  clock: 0 
+#  PC unit: PC:  8 
+#  Instruction Memory Unit:
+#  instruction: 00111101010010110100111010010010 
+#  Opcode= 0f , rs = 10 , rt = 11 , immediate = 20114 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 27 Read_data_2: 1318191104 Write_data_register: 1318191104 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 20114 signExtended: 20114 ALU_input_from_mux: 20114 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 20141 read_data_memory: 27 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 1318191104 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 1318191104 
+# 
+# 
+#   
+#  time: 850 
+#  clock: 1 
+#  PC unit: PC:  9 
+#  Instruction Memory Unit:
+#  instruction: 00111101011000001010001000100101 
+#  Opcode= 0f , rs = 11 , rt =  0 , immediate = 41509 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 1318191104 Read_data_2: 2720333824 Write_data_register: 2720333824 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 41509 signExtended: 4294943269 ALU_input_from_mux: 41509 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 1318232613 read_data_memory: 27 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 2720333824 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 2720333824 
+# 
+# 
+#   
+#  time: 900 
+#  clock: 0 
+#  PC unit: PC:  9 
+#  Instruction Memory Unit:
+#  instruction: 00111101011000001010001000100101 
+#  Opcode= 0f , rs = 11 , rt =  0 , immediate = 41509 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 1318191104 Read_data_2: 2720333824 Write_data_register: 2720333824 
+# 
+#  Between registers and ALU : signal_ALUSrc: 0 
+#  zeroExtended: 41509 signExtended: 4294943269 ALU_input_from_mux: 41509 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 1318232613 read_data_memory: 27 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 1 
+#  read_data_memory: 27 ImmediateExtended: 2720333824 _8to32_Read_data_memory: 27 ZeroExtended_Read_data_memory: 27  result of mux: Write_data_register: 2720333824 
+# 
+# 
+#   
+#  time: 950 
+#  clock: 1 
+#  PC unit: PC: 10 
+#  Instruction Memory Unit:
+#  instruction: 10001110011111110000000010011111 
+#  Opcode= 23 , rs = 19 , rt = 31 , immediate = 159 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 19 Read_data_2: 18 Write_data_register: 18 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 159 signExtended: 159 ALU_input_from_mux: 159 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 178 read_data_memory: 18 write_data_memory: 18 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 18 ImmediateExtended: 10420224 _8to32_Read_data_memory: 18 ZeroExtended_Read_data_memory: 18  result of mux: Write_data_register: 18 
+# 
+# 
+#   
+#  time: 1000 
+#  clock: 0 
+#  PC unit: PC: 10 
+#  Instruction Memory Unit:
+#  instruction: 10001110011111110000000010011111 
+#  Opcode= 23 , rs = 19 , rt = 31 , immediate = 159 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 19 Read_data_2: 18 Write_data_register: 18 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 159 signExtended: 159 ALU_input_from_mux: 159 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 178 read_data_memory: 18 write_data_memory: 18 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 18 ImmediateExtended: 10420224 _8to32_Read_data_memory: 18 ZeroExtended_Read_data_memory: 18  result of mux: Write_data_register: 18 
+# 
+# 
+#   
+#  time: 1050 
+#  clock: 1 
+#  PC unit: PC: 11 
+#  Instruction Memory Unit:
+#  instruction: 10001110101110000000000010000010 
+#  Opcode= 23 , rs = 21 , rt = 24 , immediate = 130 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 21 Read_data_2: 23 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 130 signExtended: 130 ALU_input_from_mux: 130 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 151 read_data_memory: 23 write_data_memory: 23 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 8519680 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1100 
+#  clock: 0 
+#  PC unit: PC: 11 
+#  Instruction Memory Unit:
+#  instruction: 10001110101110000000000010000010 
+#  Opcode= 23 , rs = 21 , rt = 24 , immediate = 130 
+# 
+#  Registers Unit: signal_RegWrite: 1 
+#   Read_data_1: 21 Read_data_2: 23 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 130 signExtended: 130 ALU_input_from_mux: 130 
+# 
+#  Data Memory Unit: signal_MemRead: 1 signal_MemWrite: 0 signal_sb: 0 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 151 read_data_memory: 23 write_data_memory: 23 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 8519680 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1150 
+#  clock: 1 
+#  PC unit: PC: 12 
+#  Instruction Memory Unit:
+#  instruction: 10100001101010100000000000011011 
+#  Opcode= 28 , rs = 13 , rt = 10 , immediate = 27 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  9 Read_data_2: 27 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 27 signExtended: 27 ALU_input_from_mux: 27 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 36 read_data_memory: 23 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1769472 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1200 
+#  clock: 0 
+#  PC unit: PC: 12 
+#  Instruction Memory Unit:
+#  instruction: 10100001101010100000000000011011 
+#  Opcode= 28 , rs = 13 , rt = 10 , immediate = 27 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  9 Read_data_2: 27 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 27 signExtended: 27 ALU_input_from_mux: 27 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 36 read_data_memory: 23 write_data_memory: 27 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1769472 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1250 
+#  clock: 1 
+#  PC unit: PC: 13 
+#  Instruction Memory Unit:
+#  instruction: 10100011001111100000000010011011 
+#  Opcode= 28 , rs = 25 , rt = 30 , immediate = 155 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 25 Read_data_2: 30 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 155 signExtended: 155 ALU_input_from_mux: 155 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 180 read_data_memory: 23 write_data_memory: 30 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 10158080 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1300 
+#  clock: 0 
+#  PC unit: PC: 13 
+#  Instruction Memory Unit:
+#  instruction: 10100011001111100000000010011011 
+#  Opcode= 28 , rs = 25 , rt = 30 , immediate = 155 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 25 Read_data_2: 30 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 155 signExtended: 155 ALU_input_from_mux: 155 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 1 signal_sh: 0 signal_sw: 0 
+#  Memory_Adress: 180 read_data_memory: 23 write_data_memory: 30 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 10158080 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1350 
+#  clock: 1 
+#  PC unit: PC: 14 
+#  Instruction Memory Unit:
+#  instruction: 10100101001010110000000001001010 
+#  Opcode= 29 , rs =  9 , rt = 11 , immediate = 74 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  5 Read_data_2: 1318191104 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 74 signExtended: 74 ALU_input_from_mux: 74 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 79 read_data_memory: 23 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 4849664 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1400 
+#  clock: 0 
+#  PC unit: PC: 14 
+#  Instruction Memory Unit:
+#  instruction: 10100101001010110000000001001010 
+#  Opcode= 29 , rs =  9 , rt = 11 , immediate = 74 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1:  5 Read_data_2: 1318191104 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 74 signExtended: 74 ALU_input_from_mux: 74 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 79 read_data_memory: 23 write_data_memory: 1318191104 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 4849664 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1450 
+#  clock: 1 
+#  PC unit: PC: 15 
+#  Instruction Memory Unit:
+#  instruction: 10100110010010010000000010101100 
+#  Opcode= 29 , rs = 18 , rt =  9 , immediate = 172 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2:  5 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 172 signExtended: 172 ALU_input_from_mux: 172 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 187 read_data_memory: 23 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 11272192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1500 
+#  clock: 0 
+#  PC unit: PC: 15 
+#  Instruction Memory Unit:
+#  instruction: 10100110010010010000000010101100 
+#  Opcode= 29 , rs = 18 , rt =  9 , immediate = 172 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2:  5 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 172 signExtended: 172 ALU_input_from_mux: 172 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 1 signal_sw: 0 
+#  Memory_Adress: 187 read_data_memory: 23 write_data_memory:  5 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 11272192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1550 
+#  clock: 1 
+#  PC unit: PC: 16 
+#  Instruction Memory Unit:
+#  instruction: 10101101111000000000000000101111 
+#  Opcode= 2b , rs = 15 , rt =  0 , immediate = 47 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 96 Read_data_2: 2720333824 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 47 signExtended: 47 ALU_input_from_mux: 47 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 143 read_data_memory: 23 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 3080192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1600 
+#  clock: 0 
+#  PC unit: PC: 16 
+#  Instruction Memory Unit:
+#  instruction: 10101101111000000000000000101111 
+#  Opcode= 2b , rs = 15 , rt =  0 , immediate = 47 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 96 Read_data_2: 2720333824 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 47 signExtended: 47 ALU_input_from_mux: 47 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 143 read_data_memory: 23 write_data_memory: 2720333824 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 3080192 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1650 
+#  clock: 1 
+#  PC unit: PC: 17 
+#  Instruction Memory Unit:
+#  instruction: 10101110010011000000000000011100 
+#  Opcode= 2b , rs = 18 , rt = 12 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 43 read_data_memory: 23 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1835008 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   
+#  time: 1700 
+#  clock: 0 
+#  PC unit: PC: 17 
+#  Instruction Memory Unit:
+#  instruction: 10101110010011000000000000011100 
+#  Opcode= 2b , rs = 18 , rt = 12 , immediate = 28 
+# 
+#  Registers Unit: signal_RegWrite: 0 
+#   Read_data_1: 15 Read_data_2: 32 Write_data_register: 23 
+# 
+#  Between registers and ALU : signal_ALUSrc: 1 
+#  zeroExtended: 28 signExtended: 28 ALU_input_from_mux: 28 
+# 
+#  Data Memory Unit: signal_MemRead: 0 signal_MemWrite: 1 signal_sb: 0 signal_sh: 0 signal_sw: 1 
+#  Memory_Adress: 43 read_data_memory: 23 write_data_memory: 32 
+# 
+#  Between data memory  and registers: signal_MemtoReg2: 0 signal_MemtoReg1: 0 
+#  read_data_memory: 23 ImmediateExtended: 1835008 _8to32_Read_data_memory: 23 ZeroExtended_Read_data_memory: 23  result of mux: Write_data_register: 23 
+# 
+# 
+#   

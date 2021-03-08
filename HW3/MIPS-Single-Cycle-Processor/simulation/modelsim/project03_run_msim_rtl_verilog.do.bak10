@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/hw3_restored {C:/altera/13.1/workspace/org/hw3_new/hw3_restored/ZeroExtendImm_16bit_to_32bit.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/hw3_restored {C:/altera/13.1/workspace/org/hw3_new/hw3_restored/SignExtendImm_16bit_to_32bit.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/hw3_restored {C:/altera/13.1/workspace/org/hw3_new/hw3_restored/MIPS_32bit.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/hw3_restored {C:/altera/13.1/workspace/org/hw3_new/hw3_restored/Immediate_16to32.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/hw3_restored {C:/altera/13.1/workspace/org/hw3_new/hw3_restored/Registers_Unit_32bit.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.1/workspace/org/hw3_new/hw3_restored {C:/altera/13.1/workspace/org/hw3_new/hw3_restored/Instruction_Memory_Unit_32bit.v}
+
